@@ -32,7 +32,7 @@ export const options: NextAuthOptions = {
                     }
                 }
 
-                const res = await fetch(process.env.SIGIN_URL as string, {
+                const res = await fetch(process.env.BACKEND_BASE_URL as string + process.env.SIGIN_URL as string, {
                     method: 'POST',
                     body: JSON.stringify({
                         email:email,
