@@ -4,10 +4,11 @@ import Link from "next/link";
 import { ChangeEvent, useState } from "react";
 import axios from 'axios';
 import { toast } from "react-hot-toast";
-import { hashPassword } from "@/lib/passwordHashing"
+import { generateToken } from "../../lib/SignUpToken"
+import { verifyToken } from "../../lib/SignUpToken"
+import { hashPassword } from "../../lib/passwordHashing"
 
-
-export default function SigninPage() {
+export default function SignUpPage() {
     
     const [email, setEmail] = useState('')
     const [getPassword, setPassword] = useState('')
@@ -17,33 +18,48 @@ export default function SigninPage() {
       setShowPassword(!showPassword);
     };
 
-    const password =  hashPassword(getPassword)
-    const handleSubmit = async (e: ChangeEvent<HTMLFormElement>) => {
-      e.preventDefault();
-     
-      try {
-        const {data}= await axios.post(
-          `${process.env.BACKEND_BASE_URL}api/auth/signin`,
-          {
-            email,
-            password,
-          },
-          {
-            headers: {
-              "Content-Type": "application/json",
-            },
-            withCredentials: true,
-          }
-        );
-        console.log(data)
-        toast.success(data.message);
-        // setIsAuthenticated(true);
-      } catch (error) {
-        toast.error("error logging in");
-        // setIsAuthenticated(false);
-      }
-    }
+    const passwordPattern = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\S+$).{4,}$/
 
+    const handlePasswordChange = (e: ChangeEvent<HTMLInputElement>) => {
+        const newPassword = e.target.value;
+    
+        // Check if the new password matches the regex pattern
+        if (passwordPattern.test(newPassword)) {
+          setPassword(newPassword);
+        }
+        else {
+          setPassword('');
+        }
+      };
+
+      const handleSubmit = async (e: ChangeEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const verificationToken  = verifyToken(generateToken(email))
+        const password = await hashPassword(getPassword)
+
+        try {
+          const {data}= await axios.post(
+            `${process.env.BACKEND_BASE_URL}api/auth/signup`,
+            {
+              email,
+              password,
+              verificationToken
+            },
+            {
+              headers: {
+                "Content-Type": "application/json",
+              },
+              withCredentials: true,
+            }
+          );
+          console.log(data)
+          toast.success(data.message);
+          // setIsAuthenticated(true);
+        } catch (error) {
+          toast.error("error logging in");
+          // setIsAuthenticated(false);
+        }
+      }
 
     return (
         <div className="flex flex-col gap-5 items-center bg-white py-6 text-gray-600">
@@ -69,26 +85,24 @@ export default function SigninPage() {
         <input
           type={showPassword ? 'text' : 'password'}
           placeholder="password"
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={handlePasswordChange}
           value={getPassword}
           name="password"
           className="rounded-lg border-0 outline-none w-full px-3 py-2"
           required
         />
         <span
-        //   className="eye-icon"
           onClick={togglePasswordVisibility}
-        //   style={{ cursor: 'pointer' }}
         >
           {showPassword ? 
           <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/></svg> : 
           <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m644-428-58-58q9-47-27-88t-93-32l-58-58q17-8 34.5-12t37.5-4q75 0 127.5 52.5T660-500q0 20-4 37.5T644-428Zm128 126-58-56q38-29 67.5-63.5T832-500q-50-101-143.5-160.5T480-720q-29 0-57 4t-55 12l-62-62q41-17 84-25.5t90-8.5q151 0 269 83.5T920-500q-23 59-60.5 109.5T772-302Zm20 246L624-222q-35 11-70.5 16.5T480-200q-151 0-269-83.5T40-500q21-53 53-98.5t73-81.5L56-792l56-56 736 736-56 56ZM222-624q-29 26-53 57t-41 67q50 101 143.5 160.5T480-280q20 0 39-2.5t39-5.5l-36-38q-11 3-21 4.5t-21 1.5q-75 0-127.5-52.5T300-500q0-11 1.5-21t4.5-21l-84-82Zm319 93Zm-151 75Z"/></svg>}
         </span>
       </div>
-                <button className="btn btn-primary bg-blue-500 rounded-full text-white text-center h-10" type="submit" >Sign In</button>
+                <button className="btn btn-primary bg-blue-500 rounded-full text-white text-center h-10" type="submit" >Sign Up</button>
            </form>
             <div>
-                <p className="">Don't Have an account? <Link href="" className="text-blue-500">Sign Up</Link></p>
+                <p className="">Already Have an account? <Link href="" className="text-blue-500">Sign In</Link></p>
             </div>
         </div>
     );
