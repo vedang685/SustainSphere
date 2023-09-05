@@ -4,7 +4,7 @@ import {hashPassword} from "@/lib/passwordHashing";
 import GoogleProvider from "next-auth/providers/google";
 import CredentialsProvider, {CredentialsProviderType} from "next-auth/providers/credentials"
 import {randomBytes, randomUUID} from "crypto";
-import userModel from "@/lib/userDB";
+import Users from "@/lib/users";
 
 export const options: NextAuthOptions = {
     providers: [
@@ -25,7 +25,7 @@ export const options: NextAuthOptions = {
                 }
                 const email = credentials.email;
                 const securePassword = await hashPassword(credentials.password);
-                const isUser = await userModel.findOne({ email });
+                const isUser = await Users.findOne({ email });
                 if(!isUser){
                     return {
                         status:false,
