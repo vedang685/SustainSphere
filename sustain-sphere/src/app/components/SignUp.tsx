@@ -39,7 +39,7 @@ export default function SignUpPage() {
 
         try {
           const {data}= await axios.post(
-            `${process.env.BACKEND_BASE_URL}api/auth/signup`,
+            "http://localhost:5000/api/auth/signup",
             {
               email,
               password,
