@@ -1,12 +1,15 @@
 import {NextAuthOptions} from "next-auth";
-import {ensureDbConnected} from "@/lib/databaseConnect";
-import {hashPassword} from "@/lib/passwordHashing";
+import {ensureDbConnected} from "@/lib/db/databaseConnect";
+import {hashPassword} from "@/lib/utils/passwordHashing";
 import GoogleProvider from "next-auth/providers/google";
 import CredentialsProvider, {CredentialsProviderType} from "next-auth/providers/credentials"
 import {randomBytes, randomUUID} from "crypto";
-import Users from "@/lib/users";
+import Users from "@/lib/db/users";
 
 export const options: NextAuthOptions = {
+    pages: {
+        signIn: '/signin'
+    },
     providers: [
         GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID??"",
@@ -24,7 +27,6 @@ export const options: NextAuthOptions = {
                     return null;
                 }
                 const email = credentials.email;
-                const securePassword = await hashPassword(credentials.password);
                 const isUser = await Users.findOne({ email });
                 if(!isUser){
                     return {
@@ -37,7 +39,7 @@ export const options: NextAuthOptions = {
                     method: 'POST',
                     body: JSON.stringify({
                         email:email,
-                        password:securePassword
+                        password:credentials.password
                     }),
                     headers: { "Content-Type": "application/json" }
                 })
