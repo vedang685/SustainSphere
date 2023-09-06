@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ChangeEvent, useState } from "react";
 import axios from 'axios';
-import { toast } from "react-hot-toast";
+// import { toast } from "react-hot-toast";
 import { generateToken } from "../../lib/SignUpToken"
 import { verifyToken } from "../../lib/SignUpToken"
 import { hashPassword } from "../../lib/passwordHashing"
@@ -53,11 +53,8 @@ export default function SignUpPage() {
             }
           );
           console.log(data)
-          toast.success(data.message);
-          // setIsAuthenticated(true);
         } catch (error) {
-          toast.error("error logging in");
-          // setIsAuthenticated(false);
+          console.log(error);
         }
       }
 
