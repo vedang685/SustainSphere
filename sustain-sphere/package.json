@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^13.4.19",
     "@radix-ui/react-label": "^2.0.2",
     "@types/mongoose": "^5.11.97",
     "@types/node": "20.5.8",

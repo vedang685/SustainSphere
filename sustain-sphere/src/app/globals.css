@@ -8,9 +8,8 @@
 }
 
 body {
-    background: var(--background);
+    background: linear-gradient(to bottom, #F1F1F1, #F1F1F1); /* Replace these colors with your desired gradient */
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*<div class="h-72 bg-gradient-to-b from-purple-600 to-blue-600"></div>*/
