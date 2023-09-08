@@ -1,40 +1,79 @@
 import exp from "constants";
+import { Inter, Poppins } from "@next/font/google";
+const inter = Inter({
+    subsets: ['latin'],
+    weight: ['400'],
+    style: [ "normal"]
+}) 
+const pops = Poppins({
+    subsets: ['latin'],
+    weight: ['400'],
+    style: [ "normal"]
+}) 
+    
 
 
 const Features= () =>{
     return(
-        <>
-        </>
-        // <div className="max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        //     <div
-        //         className="min-h-[35vh] bg-[url('https://images.unsplash.com/photo-1665686374006-b8f04cf62d57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')] bg-center bg-cover bg-no-repeat relative rounded-xl md:min-h-[75vh]">
-        //         <div
-        //             className="absolute bottom-0 left-0 right-0 max-w-xs text-center mx-auto p-6 md:left-auto md:text-left md:mx-0">
-        //             {/*// <!-- Card -->*/}
-        //             <div className=" inline-block bg-white rounded-lg md:p-7 dark:bg-gray-800">
-        //                 <div className="hidden md:block">
-        //                     <h3 className="text-lg font-bold text-gray-800 sm:text-2xl dark:text-gray-200">How does Preline
-        //                         work?</h3>
-        //                     <p className="mt-2 text-gray-800 dark:text-gray-200">Learn more about Preline.</p>
-        //                 </div>
-
-        //                 <div className="md:mt-16">
-        //                     <a className="flex items-center gap-2 text-sm font-medium text-gray-800 hover:text-gray-500 dark:text-white dark:hover:text-gray-400"
-        //                        href="#">
-        //                         <svg className="w-4 h-auto" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-        //                              fill="currentColor" viewBox="0 0 16 16">
-        //                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-        //                             <path
-        //                                 d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
-        //                         </svg>
-        //                         Watch our story
-        //                     </a>
-        //                 </div>
-        //             </div>
-        //             {/*// <!-- End Card -->*/}
-        //         </div>
-        //     </div>
-        // </div>
+        <div className="w-full flex gap-x-6 py-8 pt-12 px-4 ">
+            <div className="flex flex-col px-4 py-4 bg-white border-2 border-[#11633821] shadow-md  dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+                <img className="mx-2" src="/images/assets/ss1.png" width={64} height={65} alt="Image Description"/>
+                <div className="p-4 md:p-4">
+                    <h3 style={pops.style} className="text-lg text-[#111] mb-3 dark:text-white">
+                    Environmental Management
+                    </h3>
+                    <p style={inter.style} className="mt-1 text-[#A6A6A6] dark:text-gray-400">
+                    Explore a premier online platform for cutting-edge environmental management solutions. Discover a wealth of resources, tools, and insights to assist your organization in achieving excellence in sustainability and environmental stewardship.
+                    </p>
+                    <a href="/">
+                    <img className="py-2 px-2 mt-4 border-2 border-[#F7F6F6] rounded-full" src="/images/assets/arrow-right-line.svg" width={35} height={25}/>
+                    </a>
+                </div>
+            </div>
+            <div className="flex flex-col px-4 py-4 bg-white border-2 border-[#11633821] shadow-md  dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+                <img className="mx-2" src="/images/assets/ss2.png" width={64} height={65} alt="Image Description"/>
+                <div className="p-4 md:p-4">
+                    <h3 style={pops.style} className="text-lg text-[#111] mb-3 dark:text-white">
+                    Community Engagement & Partnering
+                    </h3>
+                    <p style={inter.style} className="mt-1 text-[#A6A6A6] dark:text-gray-400">
+                    Harness the power of community engagement and volunteering through SustainSphere. Connect organizations with impactful volunteer opportunities, access valuable resources, and strengthen your commitment to social responsibility for a better future.
+                    </p>
+                    <a href="/">
+                    <img className="py-2 px-2 mt-4 border-2 border-[#F7F6F6] rounded-full" src="/images/assets/arrow-right-line.svg" width={35} height={25}/>
+                    </a>
+                </div>
+            </div>   
+            <div className="flex flex-col px-4 py-4 bg-white border-2 border-[#11633821] shadow-md  dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+                <img className="mx-2" src="/images/assets/ss3.png" width={64} height={65} alt="Image Description"/>
+                <div className="p-4 md:p-4">
+                    <h3 style={pops.style} className="text-lg text-[#111] mb-3 dark:text-white">
+                    Integrated Reporting Dashboard
+                    </h3>
+                    <p style={inter.style} className="mt-1 text-[#A6A6A6] dark:text-gray-400">
+                    With SustainSphere's Integrated Reporting Dashboard. Consolidate and visualize your organization's environmental, social, and financial data in one user-friendly platform. Gain valuable insights, track performance, and streamline reporting for a more sustainable future.
+                    </p>
+                    <a href="/">
+                    <img className="py-2 px-2 mt-4 border-2 border-[#F7F6F6] rounded-full" src="/images/assets/arrow-right-line.svg" width={35} height={25}/>
+                    </a>
+                </div>
+            </div>   
+            <div className="flex flex-col px-4 py-4 bg-white border-2 border-[#11633821] shadow-md  dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+                <img className="mx-3.5" src="/images/assets/ss4.png" width={60} height={60} alt="Image Description"/>
+                <div className="p-4 md:p-4">
+                    <h3 style={pops.style} className="text-lg text-[#111] mb-3 dark:text-white">
+                    View All <br/> <span className="text-green-500">Our Solution</span>
+                    </h3>
+                    <p style={inter.style} className="mt-1 text-[#A6A6A6] dark:text-gray-400">
+                    Explore a premier online platform for cutting-edge environmental management solutions. Discover a wealth of resources, tools, and insights to assist your organization in achieving excellence in sustainability and environmental stewardship.
+                    </p>
+                    <a href="/">
+                    <img className="py-2 px-2 mt-4 border-2 border-[#F7F6F6] rounded-full" src="/images/assets/arrow-right-line.svg" width={35} height={25}/>
+                    </a>
+                </div>
+            </div>      
+                          
+        </div>
     );
 }
 

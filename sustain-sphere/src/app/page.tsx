@@ -22,7 +22,7 @@ export default  function Home() {
       // <main className="bg-white text-black flex min-h-screen flex-col items-center justify-between p-24">
       //     hello world
       //     <UserCard user={session?.user} pagetype="Home" />
-          <main style={poppins.style} className="container mx-auto mt-12">
+          <main style={poppins.style} className="container mx-auto mt-12 ">
               <div>
 
                   <HeroSectionMain/>

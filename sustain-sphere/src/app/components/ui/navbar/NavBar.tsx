@@ -6,7 +6,7 @@ export default function Navbar() {
 
     return (
        <>
-           <header className="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
+           <header className="flex relative flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
                <nav
                    className="mt-6 relative max-w-7xl w-full bg-gray-800 bg-opacity-95
                    border border-gray-600 rounded-[36px] mx-2 py-3 px-4 md:flex
