@@ -61,7 +61,7 @@ const HeroSectionINFO = () => {
                 </div>
                 
                 <div>
-                    <img className="rounded-xl" src="https://images.unsplash.com/photo-1648737963503-1a26da876aca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&h=900&q=80" alt="Image Description"/>
+                    <img className="rounded-xl" src="/images/assets/home/climate-change.jpg" alt="Image Description"/>
                 </div>
                 {/*// <!-- End Col -->*/}
 
@@ -77,7 +77,7 @@ const HeroSectionINFO = () => {
             {/*// <!-- Grid -->*/}
             <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
                 <div>
-                    <img className="rounded-xl" src="https://images.unsplash.com/photo-1648737963503-1a26da876aca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&h=900&q=80" alt="Image Description"/>
+                    <img className="rounded-xl" src="/images/assets/home/esgimg.png" alt="Image Description"/>
                 </div>
                 {/*// <!-- End Col -->*/}
 
@@ -131,7 +131,7 @@ At SustainSphere, we empower you to track and improve your ESG performance, enab
                 </div>
                 
                 <div>
-                    <img className="rounded-xl" src="https://images.unsplash.com/photo-1648737963503-1a26da876aca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&h=900&q=80" alt="Image Description"/>
+                    <img className="rounded-xl" src="/images/assets/home/ngo.jpg" alt="Image Description"/>
                 </div>
                 {/*// <!-- End Col -->*/}
 
