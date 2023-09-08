@@ -6,7 +6,7 @@ import {Button} from "@/app/components/ui/button";
 import {useState} from "react";
 import HeroSectionMain from "@/app/components/ui/homepage/HeroSectionMain";
 import {Poppins, Roboto} from "@next/font/google";
-import Features from "@/app/components/ui/SSFeatures";
+import Features from "@/app/components/ui/homepage/SSFeatures";
 import HeroSectionINFO from "@/app/components/ui/homepage/HeroSectionINFO";
 
 const poppins = Poppins({
