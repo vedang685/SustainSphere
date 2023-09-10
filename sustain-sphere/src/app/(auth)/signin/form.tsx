@@ -15,6 +15,7 @@ export const Form = () => {
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
+  const [signinSuccess, setSigninSuccess] = useState(false)
 
 
   const onSubmit = async (e: React.FormEvent) => {
@@ -28,6 +29,7 @@ export const Form = () => {
       })
       console.log('Res', res)
       if (!res?.error) {
+        setSigninSuccess(true)
         router.push(callbackUrl)
       } else {
         setError('Invalid email or password')
@@ -40,12 +42,15 @@ export const Form = () => {
       const res = await signIn('google', {redirectUrl: '/?userType=user'})
       console.log('Res', res)
       if (!res?.error) {
+        setSigninSuccess(true)
         router.push(callbackUrl)
       } else {
         setError('Invalid email or password')
       }
     } catch (err: any) {}
   }
+
+  if (signinSuccess) router.push("/select-type")
 
   return (
       <>
