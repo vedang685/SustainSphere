@@ -19,9 +19,11 @@ export default function Revit(){
                 <div className="rounded-2xl border-2 border-green-700 w-full mt-6 mb-10 bg-black">
                     <img className="w-full rounded-2xl opacity-[70%] " src="/images/assets/revit/envo.png"/>
                 </div>
-                <div className="absolute top-[24%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-                    <p style={pops.style} className="text-white text-4xl">ENVIRONMENTAL MANAGEMENT</p>
-                    <p style={pops.style} className="text-white mt-8 text-sm">Explore a premier online platform for cutting-edge environmental management solutions. Discover a wealth of resources, tools, and insights to assist your organization in achieving excellence in sustainability and environmental stewardship.</p>
+                <div className="absolute w-full top-[22%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                    <p style={pops.style} className="text-white flex items-center justify-center text-6xl"><span className="text-green-500">EN</span>VIRONMENTAL<span><img className=" border-2 border-green-500 pl-2 pr-1 py-2 rounded-full ml-3 mr-4" src="/images/assets/revit/g.png" width={70}/></span> MAN <span className="text-green-500">AGE</span>MENT</p>
+                </div>
+                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                    <p style={pops.style} className="text-white leading-6 text-xs">Explore a premier online platform for cutting-edge environmental management solutions. Discover a wealth of resources, tools, and insights to assist your organization in achieving excellence in sustainability and environmental stewardship.</p>
                 </div>
             </div>
             <div className="w-full relative overflow-hidden">
@@ -48,8 +50,7 @@ export default function Revit(){
                     <span className ="font-thin text-gray-600">Designation</span>
                 </p>
                 <div>
-                    <img className="absolute bottom-0 right-[10%] z-10" src="/images/assets/revit/Vector 7.png"/>
-                    <img className="absolute bottom-0 right-0 z-0" src="/images/assets/revit/Vector 8.png"/>
+                    <img className="absolute bottom-0 right-0 z-0" src="/images/assets/revit/bottom.png"/>
                 </div>
             </div>
             <Blogbg/>
