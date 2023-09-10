@@ -40,31 +40,29 @@ export const RegisterForm = () => {
 
   return (
     <form onSubmit={onSubmit} className="space-y-8 w-full sm:w-[350px]">
-      <div className="grid w-full items-center gap-1.5">
-        <Label className="px-1" htmlFor="email">Email</Label>
+      <div className="grid text-gray-800 w-full items-center gap-1.5">
+        <Label className="px-1 text-gray-800" htmlFor="email">Email</Label>
         <input
             id="email"
             required={true}
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="py-3 px-5 block w-full border-gray-200
-               rounded-md text-sm focus:border-blue-500 focus:ring-blue-500
-               dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+            className="py-3 px-5 block w-full text-gray-600 border border-gray-400
+                   rounded-md text-sm focus:border-blue-500 focus:ring-blue-500"
             placeholder="example@sustainsphere.com"
         />
       </div>
       <div className="grid w-full items-center gap-1.5">
         <Label
-            className="px-1"
+            className="px-1 text-gray-800"
             htmlFor="password">Password</Label>
         <input id="password"
                type="password"
                value={password}
                required={true}
-               className="py-3 px-5 block w-full border-gray-200
-               rounded-md text-sm focus:border-blue-500 focus:ring-blue-500
-               dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+               className="py-3 px-5 block w-full text-gray-600 border border-gray-400
+                   rounded-md text-sm focus:border-blue-500 focus:ring-blue-500"
                placeholder="Password"
                onChange={(e) => setPassword(e.target.value)}
         />

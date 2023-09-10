@@ -56,30 +56,31 @@ export const Form = () => {
       <>
         <form onSubmit={onSubmit} className="space-y-8 w-full sm:w-[350px]">
           <div className="grid w-full items-center gap-1.5">
-            <Label className="px-1" htmlFor="email">Email</Label>
+            <Label className="px-1 text-gray-800" htmlFor="email">
+              Email
+            </Label>
             <input
                 id="email"
                 required={true}
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="py-3 px-5 block w-full border-gray-200
-               rounded-md text-sm focus:border-blue-500 focus:ring-blue-500
-               dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                className="py-3 px-5 block w-full text-gray-600 border border-gray-400
+                   rounded-md text-sm focus:border-blue-500 focus:ring-blue-500"
                 placeholder="example@sustainsphere.com"
             />
           </div>
-          <div className="grid w-full items-center gap-1.5">
+
+          <div className="grid w-full  items-center gap-1.5">
             <Label
-                className="px-1"
+                className="px-1 text-gray-800"
                 htmlFor="password">Password</Label>
             <input id="password"
                    type="password"
                    value={password}
                    required={true}
-                   className="py-3 px-5 block w-full border-gray-200
-               rounded-md text-sm focus:border-blue-500 focus:ring-blue-500
-               dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                   className="py-3 px-5 block w-full text-gray-600 border border-gray-400
+                   rounded-md text-sm focus:border-blue-500 focus:ring-blue-500"
                    placeholder="Password"
                    onChange={(e) => setPassword(e.target.value)}
             />
@@ -98,18 +99,17 @@ export const Form = () => {
             </Button>
           </div>
         </form>
-        <div className="py-3 flex items-center text-xs text-gray-400
+        <div className="py-1 flex items-center text-xs text-gray-400
          uppercase before:flex-[1_1_0%] before:border-t before:border-gray-200
           before:mr-6 after:flex-[1_1_0%] after:border-t after:border-gray-200
-          after:ml-6 dark:text-gray-500 dark:before:border-gray-600 dark:after:border-gray-600">Or</div>
+          after:ml-6">Or</div>
 
         <button type="button"
                 className="w-full py-3 px-4 inline-flex justify-center
                  items-center gap-2 rounded-md border font-medium bg-white text-gray-700
                  shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2
                  focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all
-                 text-sm dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700
-                 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
+                 text-sm"
                 onClick={()=>{
                         onSubmitGoogle()
                 }}

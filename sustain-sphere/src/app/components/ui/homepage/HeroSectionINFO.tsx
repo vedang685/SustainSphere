@@ -61,7 +61,7 @@ const HeroSectionINFO = () => {
                 </div>
                 
                 <div>
-                    <img className="rounded-xl" src="/images/assets/home/climate-change.jpg" alt="Image Description"/>
+                    <img className="rounded-xl" src="/images/assets/home/climate-change.png" alt="Image Description"/>
                 </div>
                 {/*// <!-- End Col -->*/}
 

@@ -1,14 +1,16 @@
 "use client"
 import {signIn, signOut, useSession} from "next-auth/react";
+import Link from "next/link";
 
 export default function Navbar() {
     const { data: session } = useSession();
 
     return (
-       <>
+        // in case you want to fix the navbar replace the header class with the one below
+        // <header class="sticky top-4 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
            <header className="flex relative flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
                <nav
-                   className="mt-6 relative max-w-7xl w-full bg-gray-800 bg-opacity-95
+                   className="fixed mt-6 relative max-w-7xl w-full bg-gray-800 bg-opacity-95
                    border border-gray-600 rounded-[36px] mx-2 py-3 px-4 md:flex
                    md:items-center md:justify-between md:py-0 md:px-6 lg:px-8 xl:mx-auto"
                    aria-label="Global">
@@ -17,22 +19,17 @@ export default function Navbar() {
                            className="inline-block h-[3.875rem] w-[3.875rem] rounded-full"
                            src="/images/appLogo/ssLogo.svg"
                            alt="Image Description"/>
-                       <a className="flex-none text-xl font-semibold" href="/"
-                          aria-label="Brand">SustainSphere</a>
+                       <Link className="flex-none text-xl font-semibold" href="/">SustainSphere</Link>
                    </div>
                    <div id="navbar-collapse-with-animation"
                         className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
                        <div
                            className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7">
-                           <a className="font-medium text-text-white hover:text-gray-300 md:py-6 dark:text-blue-500" href="/"
-                              aria-current="page">Home</a>
-                           <a className="font-medium text-text-white hover:text-gray-300 md:py-6 dark:text-gray-400"
-                              href="#">RevIt</a>
-                           <a className="font-medium text-text-white hover:text-gray-300 md:py-6 dark:text-gray-400 "
-                              href="/blog">Blog</a>
-                           <a className="font-medium text-text-white hover:text-gray-300 md:py-6 dark:text-gray-400"
-                              href="#">About Us</a>
-
+                        <Link className="font-medium text-text-white hover:text-gray-300 md:py-6" href="/">Home</Link>
+                           <Link className="font-medium text-text-white hover:text-gray-300 md:py-6" href="/revit">Revit</Link>
+                           <Link className="font-medium text-text-white hover:text-gray-300 md:py-6" href="/blog">Blogs</Link>
+                           <Link className="font-medium text-text-white hover:text-gray-300 md:py-6" href="/about">About Us</Link>
+                           
                            <div
                                className
                                    ="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--trigger:hover] md:py-4">
@@ -161,6 +158,5 @@ export default function Navbar() {
                    </div>
                </nav>
            </header>
-       </>
     )
 }
