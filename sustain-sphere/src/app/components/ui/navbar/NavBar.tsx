@@ -17,19 +17,19 @@ export default function Navbar() {
                            className="inline-block h-[3.875rem] w-[3.875rem] rounded-full"
                            src="/images/appLogo/ssLogo.svg"
                            alt="Image Description"/>
-                       <a className="flex-none text-xl font-semibold" href="#"
+                       <a className="flex-none text-xl font-semibold" href="/"
                           aria-label="Brand">SustainSphere</a>
                    </div>
                    <div id="navbar-collapse-with-animation"
                         className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block">
                        <div
                            className="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:items-center md:justify-end md:gap-y-0 md:gap-x-7 md:mt-0 md:pl-7">
-                           <a className="font-medium text-text-white hover:text-gray-300 md:py-6 dark:text-blue-500" href="#"
+                           <a className="font-medium text-text-white hover:text-gray-300 md:py-6 dark:text-blue-500" href="/"
                               aria-current="page">Home</a>
                            <a className="font-medium text-text-white hover:text-gray-300 md:py-6 dark:text-gray-400"
                               href="#">RevIt</a>
                            <a className="font-medium text-text-white hover:text-gray-300 md:py-6 dark:text-gray-400 "
-                              href="#">Blog</a>
+                              href="/blog">Blog</a>
                            <a className="font-medium text-text-white hover:text-gray-300 md:py-6 dark:text-gray-400"
                               href="#">About Us</a>
 
