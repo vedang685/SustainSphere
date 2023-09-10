@@ -11,6 +11,7 @@
   "dependencies": {
     "@next/font": "^13.4.19",
     "@radix-ui/react-label": "^2.0.2",
+    "@types/draft-js": "^0.11.12",
     "@types/mongoose": "^5.11.97",
     "@types/node": "20.5.8",
     "@types/react": "18.2.21",
@@ -19,6 +20,7 @@
     "axios": "^1.5.0",
     "bcrypt": "^5.1.1",
     "class-variance-authority": "^0.7.0",
+    "draft-js": "^0.11.7",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "jsonwebtoken": "^9.0.2",
