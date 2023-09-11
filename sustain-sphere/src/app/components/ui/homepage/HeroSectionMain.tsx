@@ -9,10 +9,7 @@ const MainHeroSection = () => {
                     </div>
 
                     <div className="lg:col-span-6 mt-10 lg:mt-0">
-                        <img className="w-full rounded-xl z-10 relative" src="/images/assets/earth_3d.png" alt="Image Description"/>
-                        <div className="absolute bottom-0 right-0">
-                            <img className="w-full h-full" src="/images/assets/vector_home_bottom.png" alt="Vector Image"/>
-                        </div>
+                        <img className="w-full rounded-xl z-10 relative" src="/images/assets/home/earth_illustration.png" alt="Image Description"/>
                     </div>
                 </div>
         </div>
