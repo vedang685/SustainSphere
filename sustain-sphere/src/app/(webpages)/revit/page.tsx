@@ -22,8 +22,9 @@ export default function Revit(){
                 <div className="absolute w-full top-[22%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                     <p style={pops.style} className="text-white flex items-center justify-center text-6xl"><span className="text-green-500">EN</span>VIRONMENTAL<span><img className=" border-2 border-green-500 pl-2 pr-1 py-2 rounded-full ml-3 mr-4" src="/images/assets/revit/g.png" width={70}/></span> MAN <span className="text-green-500">AGE</span>MENT</p>
                 </div>
-                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                <div className="absolute bottom-[-7%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
                     <p style={pops.style} className="text-white leading-6 text-xs">Explore a premier online platform for cutting-edge environmental management solutions. Discover a wealth of resources, tools, and insights to assist your organization in achieving excellence in sustainability and environmental stewardship.</p>
+                    <p className="mt-3 text-[12px]"><span className="text-green-500 text-[18px]">E</span><span className="text-white mr-2">nvironmental </span><span className="text-green-500 text-[18px]">N</span><span className="text-white mr-2">urturing <span className="ml-1">for</span></span><span className="text-green-500 text-[18px]">G</span><span className="text-white mr-2">lobal </span><span className="text-green-500 text-[18px]">A</span><span className="text-white mr-2">wareness <span className="ml-1">and</span></span><span className="text-green-500 text-[18px]">G</span><span className="text-white mr-2">reen </span><span className="text-green-500 text-[18px]">E</span><span className="text-white mr-2">mpowerment</span></p>
                 </div>
             </div>
             <div className="w-full relative overflow-hidden">
