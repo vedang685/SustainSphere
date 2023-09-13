@@ -4,23 +4,27 @@ import Link from "next/link";
 
 const HeroSectionINFO = () => {
     return( <>
-        {/* 2nd info section */}
+
+    {/*  TODO : add the 1st info section */}
+
+    
+        {/* 2nd info section
 
         <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-            {/*// <!-- Grid -->*/}
+          
             <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
                 
             <div className="mt-5 sm:mt-10 lg:mt-0">
                     <div className="space-y-6 sm:space-y-8">
-                        {/*// <!-- Title -->*/}
+                   
                         <div className="space-y-2 md:space-y-4">
                             <h2 className="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-gray-200">
                             Cimate Change
                             </h2>
                         </div>
-                        {/*// <!-- End Title -->*/}
+                    
                         {/*//*/}
-                        {/*// <!-- List -->*/}
+                      
                         <ul role="list" className="space-y-2 sm:space-y-4">
                             <li className="flex space-x-3 items-baseline">
                             <span className="flex-shrink-0 h-2 w-2 bg-blue-600 dark:bg-blue-500 rounded-full"></span>
@@ -54,26 +58,21 @@ const HeroSectionINFO = () => {
     </li>
 </ul>
 
-
-
-                        {/*// <!-- End List -->*/}
-                    </div>
+                    {/* </div>
                 </div>
-                
-                <div>
+                 */}
+                {/* <div>
                     <img className="rounded-xl" src="/images/assets/home/climate-change.png" alt="Image Description"/>
                 </div>
-                {/*// <!-- End Col -->*/}
+             
 
-                
-                {/*// <!-- End Col -->*/}
+
             </div>
-            {/*// <!-- End Grid -->*/}
-        </div>
+        </div> */}
 
         {/* 3rd info section */}
 
-        <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-32 mx-auto">
             {/*// <!-- Grid -->*/}
             <div className="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
                 <div>
