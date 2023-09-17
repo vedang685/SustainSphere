@@ -1,7 +1,7 @@
 
 const BlogCard = () =>{
     return(<>
-        <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div className="max-w-[85rem] px-4 py-6 sm:px-6 lg:px-8 lg:py-10 mx-auto">
 
             <div className="grid lg:grid-cols-2 lg:gap-y-16 gap-10">
                 <a className="group rounded-xl overflow-hidden" href="/not-existing-route">

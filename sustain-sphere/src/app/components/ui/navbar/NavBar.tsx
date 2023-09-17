@@ -113,7 +113,7 @@ export default function Navbar() {
                            <div>
                                {(session && session.user) ? (
                                    <a className="flex items-center gap-x-2 font-medium text-text-white hover:text-gray-300
-                           md:border-l md:border-gray-300 md:my-6 md:pl-6 dark:border-gray-700"
+                           md:border-l md:border-gray-300 md:my-6 md:pl-6 dark:border-gray-700 hover:cursor-pointer"
                                       onClick={ () =>{
                                           signOut()
                                       }} >
@@ -126,7 +126,7 @@ export default function Navbar() {
                                    </a>
                                ) : (
                                    <a className="flex items-center gap-x-2 font-medium text-text-white hover:text-gray-300
-                           md:border-l md:border-gray-300 md:my-6 md:pl-6 dark:border-gray-700"
+                           md:border-l md:border-gray-300 md:my-6 md:pl-6 dark:border-gray-700 hover:cursor-pointer"
                                       onClick={ () =>{
                                           signIn()
                                       }} >

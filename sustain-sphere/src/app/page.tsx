@@ -1,8 +1,4 @@
 'use client'
-import {options} from "@/app/api/auth/[...nextauth]/options";
-import {getServerSession} from "next-auth";
-import UserCard from "./components/UserCard"
-import {Button} from "@/app/components/ui/button";
 import {useState} from "react";
 import HeroSectionMain from "@/app/components/ui/homepage/HeroSectionMain";
 import {Poppins, Roboto} from "@next/font/google";

@@ -3,15 +3,18 @@ import React, { useState } from 'react'
 import {Label} from "@/app/components/ui/label";
 import {Button} from "@/app/components/ui/button";
 import {Alert} from "@/app/components/ui/alert";
-import {generateToken} from "@/lib/utils/SignUpToken";
-import axios from "axios";
-import {router} from "next/client";
+
 
 export const RegisterForm = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
+    const [data,setData] = useState({
+        email : "",
+        password: "",
+        detailProvided: false,
+    })
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -23,8 +26,7 @@ export const RegisterForm = () => {
                   "Content-Type": "application/json",
               },
               body: JSON.stringify({
-                  email,
-                  password,
+                  data
               }),
           });
 
@@ -47,7 +49,9 @@ export const RegisterForm = () => {
             required={true}
             type="email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) =>
+                setData({...data,email: e.target.value})
+        }
             className="py-3 px-5 block w-full text-gray-600 border border-gray-400
                    rounded-md text-sm focus:border-blue-500 focus:ring-blue-500"
             placeholder="example@sustainsphere.com"
@@ -64,7 +68,7 @@ export const RegisterForm = () => {
                className="py-3 px-5 block w-full text-gray-600 border border-gray-400
                    rounded-md text-sm focus:border-blue-500 focus:ring-blue-500"
                placeholder="Password"
-               onChange={(e) => setPassword(e.target.value)}
+               onChange={(e) => setData({...data,password: e.target.value})}
         />
       </div>
       {error && <Alert>{error}</Alert>}

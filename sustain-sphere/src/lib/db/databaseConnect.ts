@@ -10,5 +10,5 @@ export async function ensureDbConnected() {
     await mongoose.connect(process.env.MONGO_URL as string, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        dbName: "courses" } as ConnectOptions);
+        dbName: "test" } as ConnectOptions);
 }

@@ -34,7 +34,8 @@ export const Form = () => {
       } else {
         setError('Invalid email or password')
       }
-    } catch (err: any) {}
+    } catch (err: any) {
+    }
   }
 
   const onSubmitGoogle = async () => {
@@ -49,8 +50,6 @@ export const Form = () => {
       }
     } catch (err: any) {}
   }
-
-  if (signinSuccess) router.push("/select-type")
 
   return (
       <>
