@@ -12,12 +12,11 @@ body {
     color: white;
 }
 
-/*.bg-image {*/
-/*    background-image: url("/images/assets/vector_home_bottom.png");*/
-/*    background-position: bottom right;*/
-/*    background-size: contain; !* or background-size: contain; depending on your preference *!*/
-/*    background-repeat: no-repeat;*/
-/*}*/
+.bg-image {
+    background-image: url('/sustain-sphere/public/images/assets/blog/arrangement-desk-elements-with-copy-space.jpg');
+    background-size: contain; /* or background-size: contain; depending on your preference */
+    background-repeat: no-repeat;
+}
 
 
 /*<div class="h-72 bg-gradient-to-b from-purple-600 to-blue-600"></div>*/

@@ -36,7 +36,7 @@ const Features= () =>{
 
             <div className="flex relative flex-col px-4 py-6 bg-white border-2 border-[#11633821] rounded-xl shadow-md text-black hover:bg-green-500 hover:text-white hover:cursor-pointer group">
                 <div className="p-4 flex-1 md:p-5">
-                <Link href='/ssfeaturepages/deforestation'>
+                <Link href='/revit/deforestation'>
                     <img className="w-16 h-16 my-4" src="/images/assets/ss2.png" alt="Image Description"/>
                     <h3 style={pops.style} className="text-lg  mb-3">
                         Community Engagement & Partnering
