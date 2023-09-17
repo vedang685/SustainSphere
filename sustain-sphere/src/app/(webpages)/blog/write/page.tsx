@@ -46,9 +46,10 @@ export default function Editor() {
         <>
     {(session && session.user) ? (
             <div className="text-black">
-            <div className="container mx-auto px-4 space-y-4 w-full sm:w-[850px] my-6 flex flex-col items-center">
-            <h2 className="text-2xl font-bold md:text-3xl dark:text-white">Blogosphere: Share Your Ideas and
-            Insights</h2>
+                <div className="container mx-auto px-4 space-y-4 w-full sm:w-[850px] my-6 flex flex-col items-center">
+                    <h2 className="text-2xl font-bold md:text-3xl dark:text-white">Blogosphere: Share Your Ideas and
+                    Insights
+                    </h2>
                 </div>
                 <div className="container mx-auto px-4 space-y-4 w-full sm:w-[850px] my-6 flex flex-col items-center">
                     <p className="text-xl text-center">Start writing your eco-story with SustainSphere.</p>
@@ -71,13 +72,12 @@ export default function Editor() {
                             value={title}
                             onChange={(e) => setTitle(e.target.value)}
                             className="py-3 px-5 block w-full text-gray-600 border border-gray-400
-                   rounded-md text-sm focus:border-blue-500 focus:ring-blue-500"
+                            rounded-md text-sm focus:border-blue-500 focus:ring-blue-500"
                             placeholder="Title"
                         />
                     </div>
 
-                    <div className="container h-screen">
-
+                    <div className="container mb-10">
                         <AppTest onEditorStateChange={handleEditorStateChange}/>
                     </div>
 
