@@ -74,7 +74,9 @@ export default function Editor({ onEditorStateChange }) {
   return (
     <LexicalComposer initialConfig={editorConfig}>
       <div className="editor-container">
-        <ToolbarPlugin />
+        <div className="editor-toolbar-layout">
+          <ToolbarPlugin />
+        </div>
         <div className="editor-inner">
           <RichTextPlugin
             contentEditable={<ContentEditable className="editor-input" />}
