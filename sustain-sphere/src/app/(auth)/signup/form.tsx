@@ -78,7 +78,8 @@ export const RegisterForm = () => {
             variant="primaryFullWidth"
             size="default"
             loading={loading}
-            onClick={() => setLoading(!loading)}
+            onClick={() => setLoading(true)}
+            disabled={loading}
         >
           SignUp
         </Button>

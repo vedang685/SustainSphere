@@ -30,83 +30,82 @@ export default function MyFormPage() {
         <div className='text-center py-8'>
          <h1 className="text-black text-5xl">Select Your Type</h1>
   
-  <div className='py-10 content-center'>
-  <div className="flex">
+         <div className="py-20 flex justify-center items-center space-x-16">
+  <div className="flex items-center text-gray-500 hover:text-gray-400">
     <input
       type="radio"
       name="hs-default-radio"
       value="Individual"
       checked={selectedOption === 'Individual'}
       onChange={handleOptionChange}
-      // Add your existing input attributes here
     />
     <label
       htmlFor="hs-default-radio"
-      className="text-sm text-gray-500 ml-2 dark:text-gray-400"
+      className="text-xl pl-2"
     >
       Individual
     </label>
   </div>
 
-  <div className="flex">
+  <div className="flex items-center text-gray-500 hover:text-gray-400">
     <input
       type="radio"
       name="hs-default-radio"
       value="Institute"
       checked={selectedOption === 'Institute'}
       onChange={handleOptionChange}
-      // Add your existing input attributes here
     />
     <label
-      htmlFor="hs-checked-radio"
-      className="text-sm text-gray-500 ml-2 dark:text-gray-400"
+      htmlFor="hs-default-radio"
+      className="text-xl pl-2"
     >
       Institute
     </label>
   </div>
 
-  <div className="flex">
+  <div className="flex items-center text-gray-500 hover:text-gray-400">
     <input
       type="radio"
       name="hs-default-radio"
       value="Ngo"
       checked={selectedOption === 'Ngo'}
       onChange={handleOptionChange}
-      // Add your existing input attributes here
     />
     <label
       htmlFor="hs-default-radio"
-      className="text-sm text-gray-500 ml-2 dark:text-gray-400"
+      className="text-xl pl-2"
     >
       Ngo
     </label>
   </div>
 
-  <div className="flex">
+  <div className="flex items-center text-gray-500 hover:text-gray-400">
     <input
       type="radio"
       name="hs-default-radio"
       value="Enterprise"
       checked={selectedOption === 'Enterprise'}
       onChange={handleOptionChange}
-      // Add your existing input attributes here
     />
     <label
       htmlFor="hs-default-radio"
-      className="text-sm text-gray-500 ml-2 dark:text-gray-400"
+      className="text-xl pl-2"
     >
       Enterprise
     </label>
   </div>
-  </div>
+</div>
 
 
+
+  <div className='py-10'>
   <Button
     type="button"
     onClick={handleFormSubmit}
   >
     Submit
   </Button>
+  </div>
         </div>
         )}
   
