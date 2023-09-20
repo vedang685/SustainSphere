@@ -3,7 +3,7 @@
 import {useSession} from "next-auth/react";
 import {redirect, useRouter} from "next/navigation";
 import AppTest from "@/app/components/BlogEditor/App";
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {Button} from "@/app/components/ui/button";
 
 
@@ -16,29 +16,41 @@ export default function Editor() {
             redirect('/signin?callbackUrl=/blog/write')
         }
         })
+        const [title, setTitle] = useState("");
+        const [editorState, setEditorState] = useState();
+        const [isButtonEnabled, setIsButtonEnabled] = useState(false);
+        const [isContentEntered, setIsContentEntered] = useState(false)
 
-    const [title, setTitle] = useState('')
 
-    const [editorState, setEditorState] = useState();
-    function handleEditorStateChange(newState : any) {
-        setEditorState(newState);
-    }
+     function handleEditorStateChange(newState: any) {
+    setEditorState(newState);
+    setIsContentEntered(Boolean(newState)); // Set isContentEntered to true if newState is not undefined
+  }
+  useEffect(() => {
+    setIsButtonEnabled(title.trim() !== "" && isContentEntered);
+  }, [title, isContentEntered])
+
+  const email = session?.user?.email ?? "";
+
     async function publishBlog() {
         const res = await fetch("http://localhost:5000/api/user/blog", {
             method: 'POST',
             body: JSON.stringify({
                 title: title,
                 content: JSON.stringify(editorState),
-                date :"1987-09-28",
+                date : new Date(),
                 tags :" test"
             }),
             headers: {
                 "Content-Type": "application/json",
                 "Accept": "application/json",
-                email: "techdazex@gmail.com",
+                email: email,
             }
         })
-
+        if(res.ok) {
+            router.push("/blog")
+        }
+        console.error(res)
     }
 
     console.log(editorState)
@@ -53,14 +65,11 @@ export default function Editor() {
                 </div>
                 <div className="container mx-auto px-4 space-y-4 w-full sm:w-[850px] my-6 flex flex-col items-center">
                     <p className="text-xl text-center">Start writing your eco-story with SustainSphere.</p>
-                        <Button className="flex justify-center" size="small"
-                        onClick={()=>{
-                            publishBlog()
-                                .then(() => {
-                                    // Blog publishing was successful, navigate to "/blog"
-                                    router.push("/blog")
-                                })
-                        }}>Publish</Button>
+                    <Button
+              className="flex justify-center"
+              size="small"
+              disabled={!isButtonEnabled} // Disable the button when it's not enabled
+              onClick={publishBlog}>Publish</Button>
                 </div>
 
                 <div className="px-48">

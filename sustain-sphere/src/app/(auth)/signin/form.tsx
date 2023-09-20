@@ -91,8 +91,8 @@ export const Form = () => {
                 variant="primaryFullWidth"
                 size="default"
                 loading={loading}
-                onClick={() => setLoading(!loading)
-                }
+                onClick={() => setLoading(true)}
+                disabled={loading}
             >
               Sign in
             </Button>

@@ -1,6 +1,7 @@
 'use client'
 
 import {useState } from "react"
+import { useSession } from "next-auth/react";
 
 const IndividualForm= ()=> {
     const [firstName, setFirstName] = useState('')
@@ -8,6 +9,10 @@ const IndividualForm= ()=> {
     const [address, setAddress] = useState('')
     const [occupation, setOccupation] = useState('')
     const [reason, setReason] = useState('')
+
+    const {data: session} = useSession({required: true})
+
+    const email = session?.user?.email ?? ""
 
     const handleSubmit = () => {
 
@@ -67,8 +72,9 @@ const IndividualForm= ()=> {
                         <div className="sm:col-span-9">
                             <input id="af-account-email" type="email"
                                    className="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm text-sm
-                                   rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900
-                                   dark:border-gray-700 dark:text-gray-400" placeholder="maria@site.com"/>
+                                   rounded-lg focus:border-blue-500 focus:ring-blue-500 text-black" 
+                                   value={email}
+                                   />
                         </div>
 
                         <div className="sm:col-span-3">
