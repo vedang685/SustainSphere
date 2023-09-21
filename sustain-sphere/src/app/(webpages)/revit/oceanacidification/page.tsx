@@ -29,21 +29,47 @@ export default function Deforestation(){
             <div className="w-full relative overflow-hidden">
                 <div style={lora.style} className="w-[70%] leading-7 ml-[15%] mb-10 text-[#495057]">
                     <p style={lora.style} className="text-2xl text-black mb-8">
-                        Soil Erosion
+                        Ocean Acidification
                     </p>
-                        Sed lectus vestibulum mattis ullamcorper velit. Non consectetur a erat nam at. At quis risus sed vulputate. Dui ut ornare lectus sit amet est. Urna porttitor rhoncus dolor purus non enim praesent elementum. Et netus et malesuada fames ac turpis egestas maecenas. Nibh venenatis cras sed felis. Vitae tortor condimentum lacinia quis vel eros donec ac. Morbi tempus iaculis urna id volutpat lacus laoreet. Turpis cursus in hac habitasse platea dictumst. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Diam quam nulla porttitor massa. Malesuada proin libero nunc consequat interdum varius sit amet. Nisl purus in mollis nunc sed. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Quis lectus nulla at volutpat diam ut venenatis. Nibh cras pulvinar mattis nunc sed blandit libero volutpat.
-                        Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Eu tincidunt tortor aliquam nulla facilisi cras. Sit amet luctus venenatis lectus magna. Neque gravida in fermentum et sollicitudin ac orci. Pharetra sit amet aliquam id diam. Integer malesuada nunc vel risus. Egestas erat imperdiet sed euismod nisi. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Pretium quam vulputate dignissim suspendisse. Feugiat in fermentum posuere urna nec. Ut sem viverra aliquet eget sit amet.
-                        Etiam dignissim diam quis enim lobortis. Integer malesuada nunc vel risus commodo viverra. Massa tincidunt nunc pulvinar sapien 
+                    Welcome to our dedicated webpage on ocean acidification, a hidden but profound environmental issue that poses a threat to marine ecosystems and biodiversity. In this comprehensive guide, we will delve into the causes, impacts, and potential solutions to address the acidification of our oceans.
                     <p style={lora.style} className="text-2xl text-black mt-8 mb-8">
-                        Solutions
+                        The Causes:
                     </p>
-                    Sed lectus vestibulum mattis ullamcorper velit. Non consectetur a erat nam at. At quis risus sed vulputate. Dui ut ornare lectus sit amet est. Urna porttitor rhoncus dolor purus non enim praesent elementum. Et netus et malesuada fames ac turpis egestas maecenas. Nibh venenatis cras sed felis. Vitae tortor condimentum lacinia quis vel eros donec ac. Morbi tempus iaculis urna id volutpat lacus laoreet. Turpis cursus in hac habitasse platea dictumst. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Diam quam nulla porttitor massa. Malesuada proin libero nunc consequat interdum varius sit amet. Nisl purus in mollis nunc sed. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Quis lectus nulla at volutpat diam ut venenatis. Nibh cras pulvinar mattis nunc sed blandit libero volutpat.
-                    <div className="my-4"/>
-                    Sed lectus vestibulum mattis ullamcorper velit. Non consectetur a erat nam at. At quis risus sed vulputate. Dui ut ornare lectus sit amet est. Urna porttitor rhoncus dolor purus non enim praesent elementum. Et netus et malesuada fames ac turpis egestas maecenas. Nibh venenatis cras sed felis. Vitae tortor condimentum lacinia quis vel eros donec ac. Morbi tempus iaculis urna id volutpat lacus laoreet. Turpis cursus in hac habitasse platea dictumst. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Diam quam nulla porttitor massa. Malesuada proin libero nunc consequat interdum varius sit amet. Nisl purus in mollis nunc sed. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Quis lectus nulla at volutpat diam ut venenatis. Nibh cras pulvinar mattis nunc sed blandit libero volutpat.
-                    
-                    Sed lectus vestibulum mattis ullamcorper velit. Non consectetur a erat nam at. At quis risus sed vulputate. Dui ut ornare lectus sit amet est. Urna porttitor rhoncus dolor purus non enim praesent elementum. Et netus et malesuada fames ac turpis egestas maecenas. Nibh venenatis cras sed felis. Vitae tortor condimentum lacinia quis vel eros donec ac. Morbi tempus iaculis urna id volutpat lacus laoreet. Turpis cursus in hac habitasse platea dictumst. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Diam quam nulla porttitor massa. Malesuada proin libero nunc consequat interdum varius sit amet. Nisl purus in mollis nunc sed. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Quis lectus nulla at volutpat diam ut venenatis. Nibh cras pulvinar mattis nunc sed blandit libero volutpat.
-                    <div className="my-4"/>
-                    Sed lectus vestibulum mattis ullamcorper velit. Non consectetur a erat nam at. At quis risus sed vulputate. Dui ut ornare lectus sit amet est. Urna porttitor rhoncus dolor purus non enim praesent elementum. Et netus et malesuada fames ac turpis egestas maecenas. Nibh venenatis cras sed felis. Vitae tortor condimentum lacinia quis vel eros donec ac. Morbi tempus iaculis urna id volutpat lacus laoreet. Turpis cursus in hac habitasse platea dictumst. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Diam quam nulla porttitor massa. Malesuada proin libero nunc consequat interdum varius sit amet. Nisl purus in mollis nunc sed. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Quis lectus nulla at volutpat diam ut venenatis. Nibh cras pulvinar mattis nunc sed blandit libero volutpat.
+                    Ocean acidification results primarily from anthropogenic activities, including:
+                    <div className="mt-3 mb-3"></div>
+                    Carbon Emissions: The excessive release of carbon dioxide (CO2) into the atmosphere from the burning of fossil fuels is absorbed by the ocean, triggering the formation of carbonic acid. This process lowers the pH of seawater and disrupts its chemical balance.
+                    <div className="mt-3 mb-3"></div>
+                    Deforestation: The widespread loss of forests diminishes the planet's capacity to absorb CO2, allowing more of it to enter the atmosphere and subsequently dissolve into the oceans.
+                    <div className="mt-3 mb-3"></div>
+                    Agricultural Runoff: Nutrient and chemical runoff from agricultural activities can exacerbate acidification in coastal areas.
+                    <p style={lora.style} className="text-2xl text-black mt-8 mb-8">
+                        The Impacts:
+                    </p>
+                    Ocean acidification has multifaceted and profound consequences:
+                    <div className="mt-3 mb-3"></div>
+                    Marine Life: Acidic conditions hinder the ability of marine organisms with calcium carbonate shells or skeletons, including corals, mollusks, and some plankton species, to build and maintain their protective structures. This jeopardizes their survival and disrupts ocean food webs.
+                    <div className="mt-3 mb-3"></div>
+                    Food Webs: Disruptions to marine food webs can affect the availability of seafood, impacting both the livelihoods of coastal communities and the global seafood industry.
+                    <div className="mt-3 mb-3"></div>
+                    Ecosystems: Coral reefs, some of the most biodiverse ecosystems on Earth, are especially vulnerable to acidification. As these reefs degrade, numerous species that depend on them for habitat and sustenance are put at risk.
+                    <div className="mt-3 mb-3"></div>
+                    Global Climate: The impacts of ocean acidification can further contribute to climate change as altered marine ecosystems affect the planet's carbon cycle and may exacerbate the feedback loop of global warming.
+                    <p style={lora.style} className="text-2xl text-black mt-8 mb-8">
+                        The Solutions:
+                    </p>
+                    Mitigating ocean acidification is a complex challenge that requires global cooperation and commitment:
+                    <div className="mt-3 mb-3"></div>
+                    Reducing Carbon Emissions: Transition to renewable energy sources, improve energy efficiency, and reduce carbon emissions from industrial processes and transportation to slow the rate of ocean acidification.
+                    <div className="mt-3 mb-3"></div>
+                    Sustainable Fishing and Aquaculture: Promote sustainable fishing practices and responsible aquaculture to minimize additional stress on marine ecosystems.
+                    <div className="mt-3 mb-3"></div>
+                    Marine Conservation: Establish marine protected areas and conserve critical habitats like coral reefs to provide refuges for vulnerable species and allow ecosystems to recover.
+                    <div className="mt-3 mb-3"></div>
+                    Research and Monitoring: Invest in ongoing research and monitoring programs to better understand the effects of acidification, develop adaptive strategies, and identify areas of immediate concern.
+                    <div className="mt-3 mb-3"></div>
+                    Ocean acidification is a global crisis with profound implications for marine life, economies, and climate systems. However, it is a challenge we can address through coordinated efforts to reduce carbon emissions, protect vulnerable ecosystems, and promote sustainable practices.
+                    <div className="mt-3 mb-3"></div>
+                    Thank you for visiting our Ocean Acidification webpage. We hope you leave with a comprehensive understanding of this critical issue and the motivation to contribute to its resolution. Together, we can protect our oceans, preserving the biodiversity and ecosystems that depend on them.
                 </div>
                 <div className="flex w-[70%] leading-7 ml-[15%] mb-10">
                     <button className="text-[#6C757D] text-sm border-[3px] mr-2 border-[#E5E5E5] px-3 py-1 rounded-lg">tag1</button>
