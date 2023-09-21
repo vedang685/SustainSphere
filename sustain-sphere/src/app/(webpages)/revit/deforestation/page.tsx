@@ -31,19 +31,53 @@ export default function Deforestation(){
                     <p style={lora.style} className="text-2xl text-black mb-8">
                         Deforestation
                     </p>
-                        Sed lectus vestibulum mattis ullamcorper velit. Non consectetur a erat nam at. At quis risus sed vulputate. Dui ut ornare lectus sit amet est. Urna porttitor rhoncus dolor purus non enim praesent elementum. Et netus et malesuada fames ac turpis egestas maecenas. Nibh venenatis cras sed felis. Vitae tortor condimentum lacinia quis vel eros donec ac. Morbi tempus iaculis urna id volutpat lacus laoreet. Turpis cursus in hac habitasse platea dictumst. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Diam quam nulla porttitor massa. Malesuada proin libero nunc consequat interdum varius sit amet. Nisl purus in mollis nunc sed. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Quis lectus nulla at volutpat diam ut venenatis. Nibh cras pulvinar mattis nunc sed blandit libero volutpat.
-                        Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Eu tincidunt tortor aliquam nulla facilisi cras. Sit amet luctus venenatis lectus magna. Neque gravida in fermentum et sollicitudin ac orci. Pharetra sit amet aliquam id diam. Integer malesuada nunc vel risus. Egestas erat imperdiet sed euismod nisi. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Pretium quam vulputate dignissim suspendisse. Feugiat in fermentum posuere urna nec. Ut sem viverra aliquet eget sit amet.
-                        Etiam dignissim diam quis enim lobortis. Integer malesuada nunc vel risus commodo viverra. Massa tincidunt nunc pulvinar sapien 
+                    Welcome to our dedicated webpage on deforestation, an urgent global issue that demands our immediate attention. In this comprehensive guide, we will delve into the causes, impacts, and potential solutions to combat the alarming rate at which our planet's forests are disappearing.
                     <p style={lora.style} className="text-2xl text-black mt-8 mb-8">
-                        Solutions
+                        The causes:
                     </p>
-                    Sed lectus vestibulum mattis ullamcorper velit. Non consectetur a erat nam at. At quis risus sed vulputate. Dui ut ornare lectus sit amet est. Urna porttitor rhoncus dolor purus non enim praesent elementum. Et netus et malesuada fames ac turpis egestas maecenas. Nibh venenatis cras sed felis. Vitae tortor condimentum lacinia quis vel eros donec ac. Morbi tempus iaculis urna id volutpat lacus laoreet. Turpis cursus in hac habitasse platea dictumst. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Diam quam nulla porttitor massa. Malesuada proin libero nunc consequat interdum varius sit amet. Nisl purus in mollis nunc sed. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Quis lectus nulla at volutpat diam ut venenatis. Nibh cras pulvinar mattis nunc sed blandit libero volutpat.
-                    <div className="my-4"/>
-                    Sed lectus vestibulum mattis ullamcorper velit. Non consectetur a erat nam at. At quis risus sed vulputate. Dui ut ornare lectus sit amet est. Urna porttitor rhoncus dolor purus non enim praesent elementum. Et netus et malesuada fames ac turpis egestas maecenas. Nibh venenatis cras sed felis. Vitae tortor condimentum lacinia quis vel eros donec ac. Morbi tempus iaculis urna id volutpat lacus laoreet. Turpis cursus in hac habitasse platea dictumst. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Diam quam nulla porttitor massa. Malesuada proin libero nunc consequat interdum varius sit amet. Nisl purus in mollis nunc sed. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Quis lectus nulla at volutpat diam ut venenatis. Nibh cras pulvinar mattis nunc sed blandit libero volutpat.
-                    
-                    Sed lectus vestibulum mattis ullamcorper velit. Non consectetur a erat nam at. At quis risus sed vulputate. Dui ut ornare lectus sit amet est. Urna porttitor rhoncus dolor purus non enim praesent elementum. Et netus et malesuada fames ac turpis egestas maecenas. Nibh venenatis cras sed felis. Vitae tortor condimentum lacinia quis vel eros donec ac. Morbi tempus iaculis urna id volutpat lacus laoreet. Turpis cursus in hac habitasse platea dictumst. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Diam quam nulla porttitor massa. Malesuada proin libero nunc consequat interdum varius sit amet. Nisl purus in mollis nunc sed. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Quis lectus nulla at volutpat diam ut venenatis. Nibh cras pulvinar mattis nunc sed blandit libero volutpat.
-                    <div className="my-4"/>
-                    Sed lectus vestibulum mattis ullamcorper velit. Non consectetur a erat nam at. At quis risus sed vulputate. Dui ut ornare lectus sit amet est. Urna porttitor rhoncus dolor purus non enim praesent elementum. Et netus et malesuada fames ac turpis egestas maecenas. Nibh venenatis cras sed felis. Vitae tortor condimentum lacinia quis vel eros donec ac. Morbi tempus iaculis urna id volutpat lacus laoreet. Turpis cursus in hac habitasse platea dictumst. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Diam quam nulla porttitor massa. Malesuada proin libero nunc consequat interdum varius sit amet. Nisl purus in mollis nunc sed. Sollicitudin ac orci phasellus egestas tellus rutrum tellus. Dolor sit amet consectetur adipiscing elit ut aliquam purus. Quis lectus nulla at volutpat diam ut venenatis. Nibh cras pulvinar mattis nunc sed blandit libero volutpat.
+                    Deforestation is driven by various complex factors, including:
+                    <div className="mt-3 mb-3"></div>
+                    Logging: The timber industry often clears vast forested areas for commercial purposes, leading to habitat destruction and loss of biodiversity. Unsustainable logging practices can further exacerbate this issue.
+                    <div className="mt-3 mb-3"></div>
+                    Agriculture: The expansion of agricultural land, particularly for crops like soy and palm oil, is a major driver of deforestation. As the global demand for food grows, forests are frequently converted into farmland.
+                    <div className="mt-3 mb-3"></div>
+                    Infrastructure Development: Road construction, urbanization, and the expansion of human settlements result in the clearing of forests, as land is repurposed for housing, industry, and transportation networks.
+                    <div className="mt-3 mb-3"></div>
+                    Mining: Extracting valuable minerals and resources often necessitates the removal of forests, leading to habitat disruption and ecosystem degradation.
+                    <div className="mt-3 mb-3"></div>
+                    Fire: Natural and human-induced fires can ravage forests, particularly in dry and vulnerable regions. Uncontrolled fires, often exacerbated by climate change, can lead to large-scale deforestation.
+                    <p style={lora.style} className="text-2xl text-black mt-8 mb-8">
+                        The Impacts:
+                    </p>
+                    The consequences of deforestation are profound and wide-ranging:
+                    <div className="mt-3 mb-3"></div>
+                    Loss of Biodiversity: Deforestation is a leading cause of species extinction as it destroys habitats crucial for countless plant and animal species. Many species, some of which may hold potential for medical or ecological breakthroughs, are at risk.
+                    <div className="mt-3 mb-3"></div>
+                    Climate Change: Forests play a critical role in absorbing carbon dioxide, acting as "carbon sinks." Their removal contributes significantly to greenhouse gas emissions, exacerbating global climate change.
+                    <div className="mt-3 mb-3"></div>
+                    Disruption of Ecosystems: Forests are intricate ecosystems with delicate balances. Their destruction can lead to imbalances in natural processes, affecting everything from water purification to pollination.
+                    <div className="mt-3 mb-3"></div>
+                    Water Cycle Disruption: Forests help regulate the water cycle by absorbing and releasing moisture. The removal of forests can lead to altered rainfall patterns, increased flooding, and decreased water availability in some regions.
+                    <p style={lora.style} className="text-2xl text-black mt-8 mb-8">
+                        The Solutions:
+                    </p>
+                    Addressing deforestation requires a multifaceted and collaborative approach:
+                    <div className="mt-3 mb-3"></div>
+                    Sustainable Logging: Promote sustainable forestry practices that prioritize the long-term health and regeneration of forests. Certified programs like the Forest Stewardship Council (FSC) set standards for responsible logging.
+                    <div className="mt-3 mb-3"></div>
+                    Rethink Agriculture: Encourage sustainable agriculture that avoids deforestation and protects existing forests. Initiatives such as agroforestry, which combines farming and tree planting, can provide sustainable solutions.
+                    <div className="mt-3 mb-3"></div>
+                    Conservation Efforts: Establish protected areas and conservation projects to preserve vital habitats. These areas serve as sanctuaries for endangered species and can aid in reforestation efforts.
+                    <div className="mt-3 mb-3"></div>
+                    Forest Restoration: Support initiatives to reforest and restore degraded land. Tree planting campaigns, like the "Billion Tree Campaign," aim to combat deforestation and its effects.
+                    <div className="mt-3 mb-3"></div>
+                    Consumer Choices: Choose products made from sustainably sourced materials and support companies committed to deforestation-free supply chains. Look for certification labels like the FSC or Rainforest Alliance.
+                    <div className="mt-3 mb-3"></div>
+                    Policy and Legislation: Advocate for strong environmental policies and regulations to curb deforestation. International agreements like the Paris Agreement and regional initiatives can be instrumental in combating this crisis.
+                    <div className="mt-3 mb-3"></div>
+                    Deforestation is a global crisis with far-reaching consequences for the environment, biodiversity, and climate. However, it's a challenge we can address through collective action, education, and responsible consumer choices. By supporting sustainable practices, conservation efforts, and advocating for change, we can slow down and eventually halt the destruction of our planet's precious forests.
+                    Thank you for visiting our Deforestation webpage. We hope you leave with a deeper understanding of this critical issue and the inspiration to contribute to its resolution. Together, we can make a difference.
+
                 </div>
                 <div className="flex w-[70%] leading-7 ml-[15%] mb-10">
                 <button className="text-[#6C757D] text-sm border-[3px] mr-2 border-[#E5E5E5] px-3 py-1 rounded-lg">tag1</button>
