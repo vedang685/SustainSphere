@@ -1,11 +1,12 @@
-import "./styles.css";
+import "./renderStyles.css";
 import Editor from "./Editor";
 import EditorRender from "./BlogRender";
 
-export default function AppRender({ onEditorStateChange }) {
+export default function AppRender({dataToRender}) {
     return (
         <div className="AppRender">
-            <EditorRender onEditorStateChange={onEditorStateChange} />
+            <EditorRender dataToRender={dataToRender} />
         </div>
     );
 }
+

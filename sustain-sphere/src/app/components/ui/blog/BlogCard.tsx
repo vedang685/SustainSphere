@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 const BlogCard = () =>{
     return(<>
@@ -127,7 +128,7 @@ const BlogCard = () =>{
                     </div>
                 </a>
 
-                <a className="group rounded-xl overflow-hidden" href="#">
+                <Link className="group rounded-xl overflow-hidden" href="/blog/all">
                     <div className="sm:flex">
                         <div className="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
                             <img className="group-hover:scale-105 transition-transform duration-500 ease-in-out w-full h-full absolute top-0 left-0 object-cover rounded-xl" src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="Image Description"/>
@@ -148,7 +149,7 @@ const BlogCard = () =>{
                             </p>
                         </div>
                     </div>
-                </a>
+                </Link>
 
             </div>
 

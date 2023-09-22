@@ -52,8 +52,6 @@ export default function Editor() {
         }
         console.error(res)
     }
-
-    console.log(editorState)
     return(
         <>
     {(session && session.user) ? (
