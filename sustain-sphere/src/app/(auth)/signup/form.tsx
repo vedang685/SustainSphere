@@ -13,7 +13,6 @@ export const RegisterForm = () => {
     const [data,setData] = useState({
         email : "",
         password: "",
-        detailProvided: false,
     })
 
   const onSubmit = async (e: React.FormEvent) => {
@@ -25,9 +24,7 @@ export const RegisterForm = () => {
               headers: {
                   "Content-Type": "application/json",
               },
-              body: JSON.stringify({
-                  data
-              }),
+              body: JSON.stringify(data),
           });
 
           if (res.ok) {
@@ -49,8 +46,11 @@ export const RegisterForm = () => {
             required={true}
             type="email"
             value={email}
-            onChange={(e) =>
+            onChange={(e) =>{
                 setData({...data,email: e.target.value})
+                setEmail(e.target.value)
+            }
+
         }
             className="py-3 px-5 block w-full text-gray-600 border border-gray-400
                    rounded-md text-sm focus:border-blue-500 focus:ring-blue-500"
@@ -68,7 +68,10 @@ export const RegisterForm = () => {
                className="py-3 px-5 block w-full text-gray-600 border border-gray-400
                    rounded-md text-sm focus:border-blue-500 focus:ring-blue-500"
                placeholder="Password"
-               onChange={(e) => setData({...data,password: e.target.value})}
+               onChange={(e) => {
+                   setData({...data, password: e.target.value})
+                   setPassword(e.target.value)
+               }}
         />
       </div>
       {error && <Alert>{error}</Alert>}
@@ -79,7 +82,6 @@ export const RegisterForm = () => {
             size="default"
             loading={loading}
             onClick={() => setLoading(true)}
-            disabled={loading}
         >
           SignUp
         </Button>

@@ -1,5 +1,5 @@
 'use client'
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import HeroSectionMain from "@/app/components/ui/homepage/HeroSectionMain";
 import {Poppins, Roboto} from "@next/font/google";
 import Features from "@/app/components/ui/homepage/SSFeatures";
@@ -20,9 +20,7 @@ export default  function Home() {
       //     <UserCard user={session?.user} pagetype="Home" />
           <main style={poppins.style} className="container mx-auto mt-12 ">
               <div>
-
                   <HeroSectionMain/>
-                  {/*<HeroSectionMain/>*/}
                   <HeroSectionINFO/>
                   <Features/>
               </div>

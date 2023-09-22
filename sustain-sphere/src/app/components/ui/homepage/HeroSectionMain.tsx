@@ -9,7 +9,7 @@ const MainHeroSection = () => {
                     </div>
 
                     <div className="lg:col-span-6 mt-10 lg:mt-0">
-                        <img className="w-full rounded-xl z-10 relative" src="/images/assets/home/earth_illustration.png" alt="Image Description"/>
+                        <img className="w-full rounded-xl relative" src="/images/assets/home/earth_illustration.png" alt="Image Description"/>
                     </div>
                 </div>
         </div>

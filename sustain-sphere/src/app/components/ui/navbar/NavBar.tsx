@@ -1,8 +1,13 @@
 "use client"
 import {signIn, signOut, useSession} from "next-auth/react";
 import Link from "next/link";
+import {useEffect} from "react";
 
 export default function Navbar() {
+    useEffect(() => {
+        // @ts-ignore
+        import('preline')
+    }, [])
     const { data: session } = useSession();
 
     return (
@@ -65,10 +70,10 @@ export default function Navbar() {
                                <div
                                    className="hs-dropdown-menu transition-[opacity,margin]
                                    duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100
-                                   opacity-0 md:w-48 hidden z-10 bg-white md:shadow-md rounded-lg p-2
-                                    dark:bg-gray-800 md:dark:border dark:border-gray-700 dark:divide-gray-700
+                                   opacity-0 md:w-48 hidden z-10 md:shadow-md rounded-lg p-2
+                                    bg-gray-800 border-gray-700 divide-gray-700
                                     before:absolute top-full md:border before:-top-5 before:left-0 before:w-full before:h-5">
-                                   <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                                   <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm focus:ring-2 focus:ring-blue-500 text-text-white hover:bg-gray-700 hover:text-gray-300"
                                       href="#">
                                        About
                                    </a>
@@ -76,52 +81,50 @@ export default function Navbar() {
                                        className="hs-dropdown relative [--strategy:static]
                                        md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover]">
                                        <button type="button"
-                                               className="w-full flex justify-between w-full
-                                               items-center text-sm text-gray-800 rounded-md py-2
-                                               px-3 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500
-                                               dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
+                                               className="flex justify-between w-full
+                                               items-center text-sm rounded-md py-2
+                                               px-3 focus:ring-2 focus:ring-blue-500
+                                               text-text-white hover:bg-gray-700 hover:text-gray-300">
                                            Sub Menu
                                            <svg className="md:-rotate-90 ml-2 w-2.5 h-2.5 text-gray-600" width="16"
                                                 height="16" viewBox="0 0 16 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                <path
                                                    d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5"
-                                                   stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                                                   stroke="currentColor" strokeWidth="2" strokeLinecap="round"></path>
                                            </svg>
                                        </button>
 
                                        <div
                                            className="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms]
                                            md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 md:w-48 hidden z-10
-                                           md:mt-2 bg-white md:shadow-md rounded-lg p-2 dark:bg-gray-800 md:dark:border
-                                           dark:border-gray-700 dark:divide-gray-700 before:absolute md:border
+                                           md:mt-2 md:shadow-md rounded-lg p-2 bg-gray-800 md:dark:border
+                                           border-gray-700 divide-gray-700 before:absolute md:border
                                            before:-right-5 before:top-0 before:h-full before:w-5 top-0 right-full !mx-[10px]">
-                                           <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800
-                                            hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700
-                                             dark:hover:text-gray-300"
+                                           <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white
+                                           focus:ring-2 focus:ring-blue-500 hover:bg-gray-700
+                                            hover:text-gray-300"
                                               href="#">
                                                About
                                            </a>
-                                           <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800
-                                            hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700
-                                            dark:hover:text-gray-300"
+                                           <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm focus:ring-2
+                                           focus:ring-blue-500 text-text-white hover:bg-gray-700
+                                            hover:text-gray-300"
                                               href="#">
                                                Downloads
-                                           </a>
-                                           <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800
-                                           hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700
-                                           dark:hover:text-gray-300"
-                                              href="#">
-                                               Team Account
                                            </a>
                                        </div>
                                    </div>
 
-                                   <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                                   <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm focus:ring-2
+                                           focus:ring-blue-500 text-text-white hover:bg-gray-700
+                                            hover:text-gray-300"
                                       href="#">
                                        Downloads
                                    </a>
-                                   <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+                                   <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm focus:ring-2
+                                           focus:ring-blue-500 text-text-white hover:bg-gray-700
+                                            hover:text-gray-300"
                                       href="#">
                                        Team Account
                                    </a>
