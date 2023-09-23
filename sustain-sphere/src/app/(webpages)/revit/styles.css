@@ -1,0 +1,7 @@
+.main {
+    background-image: url(/images/assets/revit/background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
