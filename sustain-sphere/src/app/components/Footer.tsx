@@ -1,4 +1,5 @@
 import {Poppins} from "@next/font/google";
+import Link from "next/link";
 
 const poppins = Poppins({
     subsets : ['latin'],
@@ -18,7 +19,7 @@ const Footer = () =>{
                  {/*End Col */}
 
                 <div className="mt-3">
-                    <p className="text-off-white">Decide this part.</p>
+                    <Link href="/terms-conditions"> Terms And Conditions</Link>
                     <p className="text-off-white">© SustainSphere<br/> 2023 SustainSphere. All rights reserved.</p>
                 </div>
 
