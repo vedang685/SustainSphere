@@ -63,7 +63,7 @@ Our journey began with a simple question: How can we make sustainability accessi
             </div>
             {/*// <!-- End Grid -->*/}
         </div>
-
+{/* 
         <div className="flex justify-center items-center min-h-screen ">
       <div className="p-6 rounded-lg  w-3/4">
         <h1 className="text-3xl font-extrabold text-gray-800 mb-4 text-center pb-4">Terms and Conditions</h1>
@@ -71,12 +71,11 @@ Our journey began with a simple question: How can we make sustainability accessi
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.    
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.    
         </p>
-        {/* Add more content as needed */}
       </div>
-    </div>
+    </div> */}
 
 
-        <div>
+        <div className="py-32">
             <Features />
         </div>
         {/* Add more content as needed */}
