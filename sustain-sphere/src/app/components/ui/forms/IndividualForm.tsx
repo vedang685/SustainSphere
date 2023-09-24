@@ -47,7 +47,8 @@ const IndividualForm= ()=> {
                                 <Image
                                     src={account}
                                     className="inline-block h-16 w-16 rounded-full ring-2 ring-white dark:ring-gray-800"
-                                    alt="Image Description"/>
+                                    alt="Image Description"
+                                />
                                     <div className="flex gap-x-2">
                                         <div>
                                             <button type="button"

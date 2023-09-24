@@ -1,5 +1,23 @@
+import { useState } from "react"
+import { useSession } from "next-auth/react";
 
 export default function InstituteForm() {
+    const [address, setAddress] = useState("")
+    const [institute, setInstitute] = useState("")
+    const [contact, setContact] = useState("")
+    const [type, setType] = useState("")
+    const [firstName, setFirstName] = useState("")
+    const [lastName, setLastName] = useState("")
+    const [website, setWebsite] = useState("")
+    const [students, setStudents] = useState("")
+    const [reason, setReason] = useState("")
+    const {data: session} = useSession({required: true})
+    const email = session?.user?.email ?? ""
+
+    const handleSubmit = ()=>{
+
+    }
+
     return (
         <>
         <div className="max-w-4xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -10,7 +28,7 @@ export default function InstituteForm() {
                     </h2>
                 </div>
 
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div className="grid sm:grid-cols-12 gap-2 sm:gap-6">
 
                         <div className="sm:col-span-3">
@@ -22,12 +40,13 @@ export default function InstituteForm() {
                         <div className="sm:col-span-9">
                             <div className="sm:flex">
                                 <input id="af-account-full-name" type="text"
-                                       className="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm
-                                       -mt-px -ml-px first:rounded-t-lg last:rounded-b-lg sm:first:rounded-l-lg
-                                       sm:mt-0 sm:first:ml-0 sm:first:rounded-tr-none sm:last:rounded-bl-none
-                                       sm:last:rounded-r-lg text-sm relative focus:z-10 focus:border-blue-500
-                                        focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700
-                                        dark:text-gray-400" placeholder="Gangadhar Institute"/>
+                                       className="py-2 px-3 pr-11 block w-full border
+                                       shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                       focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                      text-black border-gray-700" placeholder="Gangadhar Institute"
+                                    value={institute}
+                                    onChange={(e)=>{setInstitute(e.target.value)}}
+                                />
                             </div>
                         </div>
 
@@ -40,9 +59,13 @@ export default function InstituteForm() {
 
                         <div className="sm:col-span-9">
                             <input id="af-account-email" type="email"
-                                   className="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm text-sm
-                                   rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900
-                                   dark:border-gray-700 dark:text-gray-400" placeholder="maria@site.com"/>
+                                   className="py-2 px-3 pr-11 block w-full border
+                                   shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                   focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                   border-gray-700 text-gray-400" placeholder="maria@site.com"
+                                disabled
+                                value = {email}
+                            />
                         </div>
 
                         <div className="sm:col-span-3">
@@ -54,9 +77,13 @@ export default function InstituteForm() {
 
                         <div className="sm:col-span-9">
                             <input id="af-account-email" type="address"
-                                   className="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm text-sm
-                                   rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900
-                                   dark:border-gray-700 dark:text-gray-400" placeholder="300,sector-229,Rohini,New Delhi-110078"/>
+                                   className="py-2 px-3 pr-11 block w-full border
+                                   shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                   focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                  text-black border-gray-700" placeholder="300,sector-229,Rohini,New Delhi-110078"
+                                    value={address}
+                                    onChange={(e)=>{setAddress(e.target.value)}}      
+                            />
                         </div>
 
                         <div className="sm:col-span-3">
@@ -67,9 +94,13 @@ export default function InstituteForm() {
 
                         <div className="sm:col-span-9">
                             <input id="af-account-email" type="text"
-                                   className="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm text-sm
-                                   rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900
-                                   dark:border-gray-700 dark:text-gray-400" placeholder="Management"/>
+                                   className="py-2 px-3 pr-11 block w-full border
+                                   shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                   focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                  text-black border-gray-700" placeholder="Management"
+                                value={type}
+                                onChange={(e)=>{setType(e.target.value)}}
+                            />
                         </div>
 
                         <div className="sm:col-span-3">
@@ -81,19 +112,21 @@ export default function InstituteForm() {
                         <div className="sm:col-span-9">
                             <div className="sm:flex">
                                 <input id="af-account-full-name" type="text"
-                                       className="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm
-                                       -mt-px -ml-px first:rounded-t-lg last:rounded-b-lg sm:first:rounded-l-lg
-                                       sm:mt-0 sm:first:ml-0 sm:first:rounded-tr-none sm:last:rounded-bl-none
-                                       sm:last:rounded-r-lg text-sm relative focus:z-10 focus:border-blue-500
-                                        focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700
-                                        dark:text-gray-400" placeholder="Ian"/>
-                                    <input type="text"
-                                           className="py-2 px-3 pr-11 block w-full border-gray-200
-                                           shadow-sm -mt-px -ml-px first:rounded-t-lg last:rounded-b-lg
-                                           sm:first:rounded-l-lg sm:mt-0 sm:first:ml-0 sm:first:rounded-tr-none
-                                           sm:last:rounded-bl-none sm:last:rounded-r-lg text-sm relative
-                                           focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900
-                                           dark:border-gray-700 dark:text-gray-400" placeholder="Bale"/>
+                                       className="py-2 px-3 pr-11 block w-full border
+                                       shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                       focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                      text-black border-gray-700" placeholder="Ian"
+                                      value={firstName}
+                                      onChange={(e)=>{setFirstName(e.target.value)}} 
+                                />
+                                <input type="text"
+                                    className="py-2 px-3 pr-11 block w-full border
+                                    shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                    focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                     text-black border-gray-700" placeholder="Bale"
+                                     value={lastName}
+                                     onChange={(e)=>{setLastName(e.target.value)}}
+                                />
                             </div>
                         </div>
 
@@ -105,9 +138,13 @@ export default function InstituteForm() {
 
                         <div className="sm:col-span-9">
                             <input id="af-account-email" type="website"
-                                   className="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm text-sm
-                                   rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900
-                                   dark:border-gray-700 dark:text-gray-400" placeholder="https://institue-of-engineering.com"/>
+                                   className="py-2 px-3 pr-11 block w-full border
+                                   shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                   focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                  text-black border-gray-700" placeholder="https://institue-of-engineering.com"
+                                  value={website}
+                                  onChange={(e)=>{setWebsite(e.target.value)}}  
+                            />
                         </div>
                        
                         <div className="sm:col-span-3">
@@ -118,9 +155,13 @@ export default function InstituteForm() {
 
                         <div className="sm:col-span-9">
                             <input id="af-account-email" type="number"
-                                   className="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm text-sm
-                                   rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900
-                                   dark:border-gray-700 dark:text-gray-400" placeholder="10000"/>
+                                   className="py-2 px-3 pr-11 block w-full border
+                                   shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                   focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                  text-black border-gray-700" placeholder="10000"
+                                  value={students}
+                                  onChange={(e)=>{setStudents(e.target.value)}}
+                            />
                         </div>
 
                         <div className="sm:col-span-3">
@@ -131,7 +172,13 @@ export default function InstituteForm() {
 
 
                         <div className="sm:col-span-9">
-                            <textarea id="af-account-bio" className="py-2 px-3 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" rows={6} placeholder="Type your message..."></textarea>
+                            <textarea id="af-account-bio" 
+                            className="py-2 px-3 pr-11 block w-full border
+                            shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                            focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                           text-black border-gray-700" rows={6} placeholder="Type your message..." 
+                            value={reason} 
+                            onChange={(e)=>{setReason(e.target.value)}}/>
                         </div>
 
                     </div>
