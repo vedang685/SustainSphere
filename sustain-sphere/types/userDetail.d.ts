@@ -1,0 +1,3 @@
+type detailsFilled = {
+    detailsFilled?: boolean,
+}

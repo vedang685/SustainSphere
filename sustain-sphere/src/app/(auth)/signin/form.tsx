@@ -92,7 +92,6 @@ export const Form = () => {
                 size="default"
                 loading={loading}
                 onClick={() => setLoading(true)}
-                disabled={loading}
             >
               Sign in
             </Button>

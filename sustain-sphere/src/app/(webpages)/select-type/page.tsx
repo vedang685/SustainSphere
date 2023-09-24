@@ -2,11 +2,11 @@
 
 import React, { useState } from 'react';
 // import { useSession } from 'next-auth/react';
-import IndividualForm from '../components/ui/forms/IndividualForm';
-import EnterpriseForm from '../components/ui/forms/EnterpriseForm';
-import InstituteForm from '../components/ui/forms/InstitueForm';
-import NgoForm from '../components/ui/forms/NgoForm';
-import { Button } from '../components/ui/button';
+import IndividualForm from '../../components/ui/forms/IndividualForm';
+import EnterpriseForm from '../../components/ui/forms/EnterpriseForm';
+import InstituteForm from '../../components/ui/forms/InstitueForm';
+import NgoForm from '../../components/ui/forms/NgoForm';
+import { Button } from '../../components/ui/button';
 
 export default function MyFormPage() {
     // const { data: session} = useSession();
@@ -120,5 +120,4 @@ export default function MyFormPage() {
       </div>
     );
   }
-  
   

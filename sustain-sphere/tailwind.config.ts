@@ -22,6 +22,6 @@ const config: Config = {
       }
     },
   },
-  plugins: [require('preline/plugin')],
+  plugins: [require('preline/plugin'), ['import', { libraryName: 'antd', libraryDirectory: 'es', style: true }]],
 }
 export default config

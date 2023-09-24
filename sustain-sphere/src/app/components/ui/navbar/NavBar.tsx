@@ -1,14 +1,52 @@
 "use client"
 import {signIn, signOut, useSession} from "next-auth/react";
 import Link from "next/link";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
+import {checkUserDetails} from "@/lib/detailCheck/userDetails";
+import {router} from "next/client";
+import {useRouter} from "next/navigation";
 
 export default function Navbar() {
+    const router = useRouter()
     useEffect(() => {
         // @ts-ignore
         import('preline')
     }, [])
     const { data: session } = useSession();
+    useEffect(() => {
+        const fetchData = async () => {
+            if (session && session.user) {
+                const user = session.user.email;
+
+                try {
+                    const detailsFilled = await checkUserDetails(user);
+
+                    if (!detailsFilled) {
+                        router.push('/select-type');
+                    } else {
+                        router.push('/');
+                    }
+                } catch (error) {
+                    // Handle API call errors here
+                    console.error(error);
+                }
+            }
+        };
+
+        fetchData();
+    }, [session, router]);
+
+
+
+    //     const detailsFilled : Promise<detailsFilled> = checkUserDetails(session?.user?.email)
+    //     console.log("detailsFilled")
+    // console.log(user)
+    //     console.log(detailsFilled)
+    //     if(!detailsFilled){
+    //         router.push('/select-type')
+    //     }else{
+    //         router.push('/')
+    // }
 
     return (
         // in case you want to fix the navbar replace the header class with the one below
@@ -148,9 +186,10 @@ export default function Navbar() {
                                ) : (
                                    <a className="flex items-center gap-x-2 font-medium text-text-white hover:text-gray-300
                            md:border-l md:border-gray-300 md:my-6 md:pl-6 dark:border-gray-700 hover:cursor-pointer"
-                                      onClick={ () =>{
+                                      onClick={()=>{
                                           signIn()
-                                      }} >
+                                      }
+                                      } >
                                        <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" viewBox="0 0 16 16">
                                            <path
