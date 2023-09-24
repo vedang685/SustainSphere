@@ -1,8 +1,22 @@
 
 import { useSession } from "next-auth/react"
+import { useState } from "react"
 
 export default function NgoForm() {
+    const [name, setName] = useState("")
+    const [address, setAddress] = useState("")
+    const [type, setType] = useState("")
+    const [firstName, setFirstName] = useState("")
+    const [lastName, setLastName] = useState("")
+    const [website, setWebsite] = useState("")
+    const [employee, setEmployee] = useState("")
+    const [mission, setMission] = useState("")
+    const [reason, setReason] = useState("")
     const { data: session } = useSession()
+
+    const handleSubmit = ()=>{
+
+    }
     
     return (
         <>
@@ -14,7 +28,7 @@ export default function NgoForm() {
                     </h2>
                 </div>
 
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div className="grid sm:grid-cols-12 gap-2 sm:gap-6">
 
                         <div className="sm:col-span-3">
@@ -26,12 +40,14 @@ export default function NgoForm() {
                         <div className="sm:col-span-9">
                             <div className="sm:flex">
                                 <input id="af-account-full-name" type="text"
-                                       className="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm
-                                       -mt-px -ml-px first:rounded-t-lg last:rounded-b-lg sm:first:rounded-l-lg
-                                       sm:mt-0 sm:first:ml-0 sm:first:rounded-tr-none sm:last:rounded-bl-none
-                                       sm:last:rounded-r-lg text-sm relative focus:z-10 focus:border-blue-500
-                                        focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700
-                                        dark:text-gray-400" placeholder="Ngo For Rich People"/>
+                                       className="py-2 px-3 pr-11 block w-full border
+                                       shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                       focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                       text-black border-gray-700" 
+                                    placeholder="Ngo For Rich People"
+                                    value={name}
+                                    onChange={(e)=>{setName(e.target.value)}}
+                                />
                             </div>
                         </div>
 
@@ -44,9 +60,13 @@ export default function NgoForm() {
 
                         <div className="sm:col-span-9">
                             <input id="af-account-email" type="email"
-                                   className="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm text-sm
-                                   rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900
-                                   dark:border-gray-700 dark:text-gray-400" placeholder="maria@site.com"/>
+                                   className="py-2 px-3 pr-11 block w-full border
+                                   shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                   focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                   text-black border-gray-700" 
+                                   placeholder="maria@site.com"
+                                    disabled
+                            />
                         </div>
 
                         <div className="sm:col-span-3">
@@ -58,9 +78,14 @@ export default function NgoForm() {
 
                         <div className="sm:col-span-9">
                             <input id="af-account-email" type="address"
-                                   className="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm text-sm
-                                   rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900
-                                   dark:border-gray-700 dark:text-gray-400" placeholder="300,sector-229,Rohini,New Delhi-110078"/>
+                                   className="py-2 px-3 pr-11 block w-full border
+                                   shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                   focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                   text-black border-gray-700" 
+                                   placeholder="300,sector-229,Rohini,New Delhi-110078"
+                                   value={address}
+                                    onChange={(e)=>{setAddress(e.target.value)}}
+                            />
                         </div>
 
                         <div className="sm:col-span-3">
@@ -71,9 +96,13 @@ export default function NgoForm() {
 
                         <div className="sm:col-span-9">
                             <input id="af-account-email" type="text"
-                                   className="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm text-sm
-                                   rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900
-                                   dark:border-gray-700 dark:text-gray-400" placeholder="Educational"/>
+                                   className="py-2 px-3 pr-11 block w-full border
+                                   shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                   focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                   text-black border-gray-700" placeholder="Educational"
+                                   value={type}
+                                    onChange={(e)=>{setType(e.target.value)}}
+                                   />
                         </div>
 
                         <div className="sm:col-span-3">
@@ -85,19 +114,23 @@ export default function NgoForm() {
                         <div className="sm:col-span-9">
                             <div className="sm:flex">
                                 <input id="af-account-full-name" type="text"
-                                       className="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm
-                                       -mt-px -ml-px first:rounded-t-lg last:rounded-b-lg sm:first:rounded-l-lg
-                                       sm:mt-0 sm:first:ml-0 sm:first:rounded-tr-none sm:last:rounded-bl-none
-                                       sm:last:rounded-r-lg text-sm relative focus:z-10 focus:border-blue-500
-                                        focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700
-                                        dark:text-gray-400" placeholder="Ian"/>
+                                       className="py-2 px-3 pr-11 block w-full border
+                                       shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                       focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                       text-black border-gray-700" 
+                                       placeholder="Ian"
+                                       value={firstName}
+                                        onChange={(e)=>{setFirstName(e.target.value)}}
+                                />
                                     <input type="text"
-                                           className="py-2 px-3 pr-11 block w-full border-gray-200
-                                           shadow-sm -mt-px -ml-px first:rounded-t-lg last:rounded-b-lg
-                                           sm:first:rounded-l-lg sm:mt-0 sm:first:ml-0 sm:first:rounded-tr-none
-                                           sm:last:rounded-bl-none sm:last:rounded-r-lg text-sm relative
-                                           focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900
-                                           dark:border-gray-700 dark:text-gray-400" placeholder="Bale"/>
+                                           className="py-2 px-3 pr-11 block w-full border
+                                           shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                           focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                           text-black border-gray-700" 
+                                           placeholder="Bale"
+                                           value={lastName}
+                                            onChange={(e)=>{setLastName(e.target.value)}}
+                                    />
                             </div>
                         </div>
 
@@ -109,9 +142,14 @@ export default function NgoForm() {
 
                         <div className="sm:col-span-9">
                             <input id="af-account-email" type="website"
-                                   className="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm text-sm
-                                   rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900
-                                   dark:border-gray-700 dark:text-gray-400" placeholder="https://institue-of-management.com"/>
+                                   className="py-2 px-3 pr-11 block w-full border
+                                   shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                   focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                   text-black border-gray-700" 
+                                   placeholder="https://institue-of-management.com"
+                                   value={website}
+                                    onChange={(e)=>{setWebsite(e.target.value)}}
+                            />
                         </div>
 
                         <div className="sm:col-span-3">
@@ -122,9 +160,14 @@ export default function NgoForm() {
 
                         <div className="sm:col-span-9">
                             <input id="af-account-email" type="number"
-                                   className="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm text-sm
-                                   rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900
-                                   dark:border-gray-700 dark:text-gray-400" placeholder="10000"/>
+                                   className="py-2 px-3 pr-11 block w-full border
+                                   shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                   focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                   text-black border-gray-700" 
+                                   placeholder="10000"
+                                   value={employee}
+                                    onChange={(e)=>{setEmployee(e.target.value)}}
+                            />
                         </div>
 
                         <div className="sm:col-span-3">
@@ -135,9 +178,12 @@ export default function NgoForm() {
 
                         <div className="sm:col-span-9">
                             <input id="af-account-email" type="file"
-                                   className="py-2 px-3 pr-11 block w-full border-gray-200 shadow-sm text-sm
-                                   rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900
-                                   dark:border-gray-700 dark:text-gray-400" placeholder=""/>
+                                   className="py-2 px-3 pr-11 block w-full border
+                                   shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                                   focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                                   text-black border-gray-700" 
+                                   placeholder=""
+                            />
                         </div>
 
                         <div className="sm:col-span-3">
@@ -148,7 +194,18 @@ export default function NgoForm() {
 
 
                         <div className="sm:col-span-9">
-                            <textarea id="af-account-bio" className="py-2 px-3 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" rows={6} placeholder="Type your message..."></textarea>
+                            <textarea id="af-account-bio" 
+                            className="py-2 px-3 pr-11 block w-full border
+                            shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                            focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                            text-black border-gray-700" 
+                            rows={6}
+                            placeholder="Type your message..."
+                            value={mission}
+                            onChange={(e)=>{setMission(e.target.value)}}
+                            >
+
+                            </textarea>
                         </div>
 
                         <div className="sm:col-span-3">
@@ -159,7 +216,17 @@ export default function NgoForm() {
 
 
                         <div className="sm:col-span-9">
-                            <textarea id="af-account-bio" className="py-2 px-3 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" rows={6} placeholder="Type your message..."></textarea>
+                            <textarea id="af-account-bio" 
+                            className="py-2 px-3 pr-11 block w-full border
+                            shadow-sm -mt-px -ml-px rounded-lg text-sm relative
+                            focus:z-10 focus:border-blue-500 focus:ring-blue-500
+                            text-black border-gray-700" 
+                            rows={6} 
+                            placeholder="Type your message..."
+                            value={reason}
+                            onChange={(e)=>{setReason(e.target.value)}}
+                            >
+                            </textarea>
                         </div>
 
 
