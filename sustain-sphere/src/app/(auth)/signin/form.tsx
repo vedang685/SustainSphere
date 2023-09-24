@@ -29,8 +29,10 @@ export const Form = () => {
       })
       console.log('Res', res)
       if (!res?.error) {
-        setSigninSuccess(true)
-        router.push(callbackUrl)
+          if(res?.error!=null){
+            setSigninSuccess(true)
+            router.push(callbackUrl)
+          }
       } else {
         setError('Invalid email or password')
       }

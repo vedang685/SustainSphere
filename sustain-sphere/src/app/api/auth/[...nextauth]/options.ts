@@ -28,10 +28,7 @@ export const options: NextAuthOptions = {
                  const email = credentials.email;
                 const isUser = await Users.findOne({ email });
                 if(!isUser){
-                    return {
-                        status:true,
-                        message:"Invalid user!!"
-                    }
+                    return null
                 }
 
                 const res = await fetch("http://localhost:5000/api/auth/signin", {
@@ -47,7 +44,13 @@ export const options: NextAuthOptions = {
                 })
 
                 const user = await res.json()
-                if (res.ok && user) {
+                if (!res.ok) {
+                    return null
+                }
+                if(user.data.staus==false){
+                    return null
+                }
+                if (res.ok && user.body.status==true) {
                     return user
                 }
                 return null
