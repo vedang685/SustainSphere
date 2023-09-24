@@ -47,10 +47,7 @@ export const options: NextAuthOptions = {
                 if (!res.ok) {
                     return null
                 }
-                if(user.data.staus==false){
-                    return null
-                }
-                if (res.ok && user.body.status==true) {
+                if (res.ok && user) {
                     return user
                 }
                 return null

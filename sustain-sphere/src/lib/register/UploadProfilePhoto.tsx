@@ -6,7 +6,7 @@ export default async function  uploadProfilePhoto(file : any, email: string){
         url: 'http://localhost:5000/api/fillDetails/individual',
         data: {profilePhoto : file},
         headers: {
-            'email': "techdazex@gmail.com" ,
+            'email': email ,
             contentType : 'application/json'
         }
     }).then(apiResponse=>{
