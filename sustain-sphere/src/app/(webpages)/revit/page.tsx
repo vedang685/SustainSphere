@@ -58,7 +58,7 @@ function revit() {
             <div className="flex relative flex-col px-4 pb-6 bg-white border-2 border-[#11633821] rounded-xl shadow-md text-black hover:bg-green-500 hover:text-white hover:cursor-pointer group">
                 <div className="p-4 flex-1 md:p-5">
                 <Link href='/revit/airpollution'>
-                    <img className="w-16 h-16 my-4" src="/images/assets/ss1.png" alt="Image Description"/>
+                    <img className="w-16 h-16 my-4" src="/images/assets/revit/industries.png" alt="Image Description"/>
                     <h3 style={pops.style} className="text-lg  mb-3">
                     Air Pollution
                     </h3>
@@ -75,7 +75,7 @@ function revit() {
             <div className="flex relative flex-col px-4 pb-6 bg-white border-2 border-[#11633821] rounded-xl shadow-md text-black hover:bg-green-500 hover:text-white hover:cursor-pointer group">
                 <div className="p-4 flex-1 md:p-5">
                 <Link href='/revit/deforestation'>
-                    <img className="w-16 h-16 my-4" src="/images/assets/ss1.png" alt="Image Description"/>
+                    <img className="w-16 h-16 my-4" src="/images/assets/revit/deforestation.png" alt="Image Description"/>
                     <h3 style={pops.style} className="text-lg  mb-3">
                     Deforestation
                     </h3>
@@ -92,7 +92,7 @@ function revit() {
             <div className="flex relative flex-col px-4 pb-6 bg-white border-2 border-[#11633821] rounded-xl shadow-md text-black hover:bg-green-500 hover:text-white hover:cursor-pointer group">
                 <div className="p-4 flex-1 md:p-5">
                 <Link href='/revit/oceanacidification'>
-                    <img className="w-16 h-16 my-4" src="/images/assets/ss1.png" alt="Image Description"/>
+                    <img className="w-16 h-16 my-4" src="/images/assets/revit/acid-rain.png" alt="Image Description"/>
                     <h3 style={pops.style} className="text-lg  mb-3">
                     Ocean Acidification
                     </h3>
@@ -109,7 +109,7 @@ function revit() {
             <div className="flex relative flex-col px-4 pb-6 bg-white border-2 border-[#11633821] rounded-xl shadow-md text-black hover:bg-green-500 hover:text-white hover:cursor-pointer group">
                 <div className="p-4 flex-1 md:p-5">
                 <Link href='/revit/soilerosion'>
-                    <img className="w-16 h-16 my-4" src="/images/assets/ss1.png" alt="Image Description"/>
+                    <img className="w-16 h-16 my-4" src="/images/assets/revit/erosion.png" alt="Image Description"/>
                     <h3 style={pops.style} className="text-lg  mb-3">
                     Soil Erosion
                     </h3>
@@ -126,7 +126,7 @@ function revit() {
             <div className="flex relative flex-col px-4 pb-6 bg-white border-2 border-[#11633821] rounded-xl shadow-md text-black hover:bg-green-500 hover:text-white hover:cursor-pointer group">
                 <div className="p-4 flex-1 md:p-5">
                 <Link href='/revit/waterpollution'>
-                    <img className="w-16 h-16 my-4" src="/images/assets/ss1.png" alt="Image Description"/>
+                    <img className="w-16 h-16 my-4" src="/images/assets/revit/waste-water.png" alt="Image Description"/>
                     <h3 style={pops.style} className="text-lg  mb-3">
                     Water Pollution
                     </h3>
