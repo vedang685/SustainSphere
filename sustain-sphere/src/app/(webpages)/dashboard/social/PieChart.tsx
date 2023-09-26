@@ -1,41 +1,53 @@
 "use client"
 
-import { Card, Title, DonutChart} from "@tremor/react";
+import React from 'react';
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { Doughnut } from 'react-chartjs-2';
 
-const cities = [
-    {
-        name: "2020",
-        sales: 9800,
+ChartJS.register(ArcElement, Tooltip, Legend);
+
+const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: 'top' as const,
+      },
+      title: {
+        display: true,
+        text: 'Yearly Safety Hazard Incident Count',
+      },
     },
+  };
+
+ const data = {
+  labels: ['Red', 'Blue', 'Yellow'],
+  datasets: [
     {
-        name: "2021",
-        sales: 4567,
+      label: '# of Votes',
+      data: [12, 19, 3],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+        'rgba(255, 206, 86, 0.2)',
+      ],
+      borderColor: [
+        'rgba(255, 99, 132, 1)',
+        'rgba(54, 162, 235, 1)',
+        'rgba(255, 206, 86, 1)',
+      ],
+      borderWidth: 1,
     },
-    {
-        name: "2022",
-        sales: 3908,
-    },
-];
-
-
-
-const valueFormatter = (number: number) => `$ ${Intl.NumberFormat("us").format(number).toString()}`;
+  ],
+};
 
 const PieChart = () => {
-  
-    return (
-        <Card className="w-96 shadow-lg bg-white text-black">
-        <Title className="text-center">Yearly Safety Hazard Incident Count</Title>
-        <DonutChart
-            className="mt-6"
-            data={cities}
-            category="sales"
-            index="name"
-            valueFormatter={valueFormatter}
-            colors={["blue", "blue", "indigo"]}
-        />
-    </Card>
-    )
+        return (
+            <>
+            <Doughnut data={data} options={options} className=' bg-white shadow-lg'/>
+            </>
+        );
 };
 
 export default PieChart
+
+
