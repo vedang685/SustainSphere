@@ -33,7 +33,7 @@ export default function Editor() {
   const email = session?.user?.email ?? "";
 
     async function publishBlog() {
-        const res = await fetch(`${process.env.BLOG_POST_URL}`, {
+        const res = await fetch("http://localhost:8000/api/user/blog", {
             method: 'POST',
             body: JSON.stringify({
                 title: title,

@@ -21,11 +21,11 @@ export default function Navbar() {
                 try {
                     const detailsFilled = await checkUserDetails(user);
 
-                    if (!detailsFilled) {
-                        router.push('/select-type');
-                    } else {
-                        router.push('/');
-                    }
+                    // if (!detailsFilled) {
+                    //     router.push('/select-type');
+                    // } else {
+                    //     router.push('/');
+                    // }
                 } catch (error) {
                     // Handle API call errors here
                     console.error(error);

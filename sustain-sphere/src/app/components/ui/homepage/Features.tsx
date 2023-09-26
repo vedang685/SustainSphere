@@ -12,7 +12,7 @@ const Features = () =>{
                 <div className="group flex flex-col h-full  rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                     <div className="h-52 flex flex-col justify-center items-center  rounded-t-xl">
                        
-                        <img src="/images/assets/Founder.jpg" alt="" className=" overflow-hidden" />
+                        <img src="/images/assets/Founder.jpg" alt="" className="w-96 h-52" />
                     </div>
                      <div className="p-4 md:p-6">
         <span className="block mb-1 text-xl font-semibold uppercase text-black text-center">
@@ -24,7 +24,7 @@ const Features = () =>{
                 <div className="group flex flex-col h-full  rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                     <div className="h-52 flex flex-col justify-center items-center  rounded-t-xl">
                        
-                        <img src="/images/assets/Founder.jpg" alt="" className=" overflow-hidden" />
+                        <img src="/images/assets/Founder.jpg" alt="" className="w-96 h-52" />
                     </div>
                      <div className="p-4 md:p-6">
         <span className="block mb-1 text-xl font-semibold uppercase text-black text-center">
@@ -38,7 +38,7 @@ const Features = () =>{
                 <div className="group flex flex-col h-full  rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                     <div className="h-52 flex flex-col justify-center items-center  rounded-t-xl">
                        
-                        <img src="/images/assets/Founder.jpg" alt="" className=" overflow-hidden" />
+                        <img src="/images/assets/Founder.jpg" alt="" className="w-96 h-52" />
                     </div>
                      <div className="p-4 md:p-6">
         <span className="block mb-1 text-xl font-semibold uppercase text-black text-center">
@@ -62,7 +62,7 @@ const Features = () =>{
                 <div className="group flex flex-col h-full  rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                     <div className="h-52 flex flex-col justify-center items-center  rounded-t-xl">
                        
-                        <img src="/images/assets/Vedang.jpg" alt="" className="w-72 overflow-hidden" />
+                        <img src="/images/assets/Vedang.jpg" alt="" className="w-96 h-52" />
                     </div>
                      <div className="p-4 md:p-6">
         <span className="block mb-1 text-xl font-semibold uppercase text-black text-center">
@@ -76,7 +76,7 @@ const Features = () =>{
                 <div className="group flex flex-col h-full  rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                     <div className="h-52 flex flex-col justify-center items-center  rounded-t-xl">
                        
-                        <img src="/images/assets/Founder.jpg" alt="" className=" overflow-hidden" />
+                        <img src="/images/assets/Founder.jpg" alt="" className="w-96 h-52" />
                     </div>
                      <div className="p-4 md:p-6">
         <span className="block mb-1 text-xl font-semibold uppercase text-black text-center">
@@ -90,7 +90,7 @@ const Features = () =>{
                 <div className="group flex flex-col h-full  rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                     <div className="h-52 flex flex-col justify-center items-center  rounded-t-xl">
                        
-                        <img src="/images/assets/Arrpit.jpg" alt="" className=" overflow-hidden" />
+                        <img src="/images/assets/Arrpit.jpg" alt="" className="w-96 h-52" />
                     </div>
                      <div className="p-4 md:p-6">
         <span className="block mb-1 text-xl font-semibold uppercase text-black text-center">

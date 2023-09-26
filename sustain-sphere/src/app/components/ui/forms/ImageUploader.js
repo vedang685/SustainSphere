@@ -48,7 +48,7 @@ export const ImagePicker = (email) => {
                  modalOk={"Upload"}>
             <Upload
                 method={"POST"}
-                action={"http://localhost:5000/api/fillDetails/individual"}
+                action={"http://localhost:8000/api/fillDetails/individual"}
                 data={{profilePhoto : fileList}}
                 headers={{
                     'email': "techdazex@gmail.com" ,

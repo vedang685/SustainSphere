@@ -3,7 +3,7 @@ import axios from "axios";
 export default async function  uploadProfilePhoto(file : any, email: string){
      const response = axios({
         method: 'post',
-        url: `${process.env.BACKEND_BASE_URL}api/fillDetails/individual`,
+        url: 'http://localhost:8000/api/fillDetails/individual',
         data: {profilePhoto : file},
         headers: {
             'email': email ,
