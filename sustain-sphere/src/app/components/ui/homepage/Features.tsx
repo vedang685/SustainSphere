@@ -21,8 +21,6 @@ const Features = () =>{
                     </div>
                 </div>
 
-
-
                 <div className="group flex flex-col h-full  rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                     <div className="h-52 flex flex-col justify-center items-center  rounded-t-xl">
                        
