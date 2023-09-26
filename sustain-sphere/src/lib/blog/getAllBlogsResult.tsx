@@ -1,5 +1,5 @@
 
 export default async function getAllBlogsResults(){
-        const response = await fetch('http://localhost:5000/api/user/blog/getAll');
+        const response = await fetch(`${process.env.BLOG_POST_URL}/getAll`);
         return response.json()
 }
