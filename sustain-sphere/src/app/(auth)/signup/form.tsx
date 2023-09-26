@@ -21,7 +21,7 @@ export const RegisterForm = () => {
     e.preventDefault()
         // TODO : remove the hardcoded url and use the .env
       try {
-          const res = await fetch("http://localhost:5000/api/auth/signup", {
+          const res = await fetch(`${process.env.BACKEND_BASE_URL}api/auth/signup`, {
               method: "POST",
               headers: {
                   "Content-Type": "application/json",
