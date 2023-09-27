@@ -18,9 +18,9 @@ export default function EnvironmentSummary(){
 
                     <div className="lg:pr-6 xl:pr-12">
                         <p className="text-6xl font-bold leading-10 text-blue-500">
-                            92%
+                            1.2
                         </p>
-                        <p className="mt-2 sm:mt-3 text-gray-500">Total Waste</p>
+                        <p className="mt-2 sm:mt-3 text-gray-500">Total Waste(metric tonnes)</p>
                     </div>
 
                 </div>
@@ -31,23 +31,91 @@ export default function EnvironmentSummary(){
 
                         <div className="mx-4">
                             <p className="text-2xl text-center font-semibold text-blue-500">Water Pollution</p>
-                            <DonApp/>
+                            <DonApp label={"30%"} data={{  
+                    datasets: [
+                        {
+                            label: '# of Votes',
+                            data: [1, 3],
+                            backgroundColor: [
+                                'rgb(17,153,88)',
+                                'rgb(40,42,40)',
+                                'rgba(52,51,51,0.2)',
+                            ],
+                            borderColor: [
+                                'rgba(61,58,53,0.2)',
+                                'rgba(61,58,53,0.2)'
+                            ],
+                            borderWidth: 1,
+                        },
+                    ],
+                }}/>
                         </div>
 
                         <div className="mx-4">
                             <p className="text-2xl text-center font-semibold text-blue-500">CO<sub>2</sub> Emission</p>
-                            <DonApp/>
+                            <DonApp label={"20%"} data={{  
+                    datasets: [
+                        {
+                            label: '# of Votes',
+                            data: [1, 5],
+                            backgroundColor: [
+                                'rgb(17,153,88)',
+                                'rgb(40,42,40)',
+                                'rgba(52,51,51,0.2)',
+                            ],
+                            borderColor: [
+                                'rgba(61,58,53,0.2)',
+                                'rgba(61,58,53,0.2)'
+                            ],
+                            borderWidth: 1,
+                        },
+                    ],
+                }}/>
                         </div>
 
 
                         <div className="mx-4">
                             <p className="text-2xl text-center font-semibold text-blue-500">Landfill Waste</p>
-                            <DonApp/>
+                            <DonApp label={"60%"} data={{  
+                    datasets: [
+                        {
+                            label: '# of Votes',
+                            data: [60, 40],
+                            backgroundColor: [
+                                'rgb(17,153,88)',
+                                'rgb(40,42,40)',
+                                'rgba(52,51,51,0.2)',
+                            ],
+                            borderColor: [
+                                'rgba(61,58,53,0.2)',
+                                'rgba(61,58,53,0.2)'
+                            ],
+                            borderWidth: 1,
+                        },
+                    ],
+                }}/>
                         </div>
 
                         <div className="mx-4">
                             <p className="text-2xl text-center font-semibold text-blue-500">Misc.</p>
-                            <DonApp/>
+                            <DonApp label={"40%"} data={{  
+                    datasets: [
+                        {
+                            label: '# of Votes',
+                            data: [12, 19],
+                            backgroundColor: [
+                                'rgb(17,153,88)',
+                                'rgb(40,42,40)',
+                                'rgba(52,51,51,0.2)',
+                            ],
+                            borderColor: [
+                                'rgba(61,58,53,0.2)',
+                                'rgba(61,58,53,0.2)'
+                            ],
+                            borderWidth: 1,
+                        },
+                    ],
+                }}/>
                         </div>
 
                     </div>
