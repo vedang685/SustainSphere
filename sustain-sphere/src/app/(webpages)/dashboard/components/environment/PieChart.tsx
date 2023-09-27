@@ -4,26 +4,8 @@ import {Doughnut} from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
- const data = {
-    datasets: [
-        {
-            label: '# of Votes',
-            data: [12, 19],
-            backgroundColor: [
-                'rgb(17,153,88)',
-                'rgb(40,42,40)',
-                'rgba(52,51,51,0.2)',
-            ],
-            borderColor: [
-                'rgba(61,58,53,0.2)',
-                'rgba(61,58,53,0.2)'
-            ],
-            borderWidth: 1,
-        },
-    ],
-};
 
-export function DonApp() {
+export function DonApp({ label, data }: { label: string ; data: any }) {
     const plug:any ={
         id:'doughnutLabel',
         beforeDatasetDraw(chart:any,args:any, pluginOptions:any){
@@ -35,7 +17,7 @@ export function DonApp() {
             ctx.fillStyle='rgba(54, 162, 235, 1)'
             ctx.textAlign='center'
             ctx.textBaseline='middle'
-            ctx.fillText(`23%`,xCoor,yCoor)
+            ctx.fillText(label,xCoor,yCoor)
 
         }
     }

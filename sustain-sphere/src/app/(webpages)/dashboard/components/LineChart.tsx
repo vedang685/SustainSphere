@@ -55,6 +55,6 @@ export const data = {
     ],
 };
 
-export function LineApp() {
+export function LineApp({ label, data }: { label: string ; data: any }) {
     return <Line options={options} data={data} />;
 }

@@ -15,7 +15,7 @@ function page() {
             </div>
             <div className="bg-white rounded-md shadow-lg relative flex items-center justify-center">
                 <div className="w-[40%] mt-5 mb-5">
-                    <img className='object-contain mt-5 mb-5' src="/images/assets/dashboardasts/envo.png" />
+                    <img className='object-contain mt-5 mb-5' src="/images/assets/dashboardasts/ev.png" />
                 </div>
                 <div className="absolute top-[30%] left-[10%] w-[20%]">
                     <p className='text-[#009765] text-xl'>ENVIRONMENT</p>
@@ -34,28 +34,78 @@ function page() {
                 <div className="h-full flex flex-col items-center justify-center">
                     <div className='text-xl text-black mb-0'>E</div>
                     <div className='h-[20vh]'>
-                        <DonApp/>
+                        <DonApp label={"33%"} data={{  
+                    datasets: [
+                        {
+                            label: '# of Votes',
+                            data: [1, 3],
+                            backgroundColor: [
+                                'rgb(17,153,88)',
+                                'rgb(40,42,40)',
+                                'rgba(52,51,51,0.2)',
+                            ],
+                            borderColor: [
+                                'rgba(61,58,53,0.2)',
+                                'rgba(61,58,53,0.2)'
+                            ],
+                            borderWidth: 1,
+                        },
+                    ],
+                }}/>
                     </div>
                 </div>
                 <div className="h-full flex flex-col items-center justify-center">
-                    <div className='text-xl text-black mb-0'>S</div>
+                    <div className='text-xl text-black mb-0'>E</div>
                     <div className='h-[20vh]'>
-                        <DonApp/>
+                        <DonApp label={"55%"} data={{  
+                    datasets: [
+                        {
+                            label: '# of Votes',
+                            data: [20, 30],
+                            backgroundColor: [
+                                'rgb(17,153,88)',
+                                'rgb(40,42,40)',
+                                'rgba(52,51,51,0.2)',
+                            ],
+                            borderColor: [
+                                'rgba(61,58,53,0.2)',
+                                'rgba(61,58,53,0.2)'
+                            ],
+                            borderWidth: 1,
+                        },
+                    ],
+                }}/>
                     </div>
                 </div>
                 <div className="h-full flex flex-col items-center justify-center">
-                    <div className='text-xl text-black mb-0'>G</div>
+                    <div className='text-xl text-black mb-0'>E</div>
                     <div className='h-[20vh]'>
-                        <DonApp/>
+                        <DonApp label={"40%"} data={{  
+                    datasets: [
+                        {
+                            label: '# of Votes',
+                            data: [12, 19],
+                            backgroundColor: [
+                                'rgb(17,153,88)',
+                                'rgb(40,42,40)',
+                                'rgba(52,51,51,0.2)',
+                            ],
+                            borderColor: [
+                                'rgba(61,58,53,0.2)',
+                                'rgba(61,58,53,0.2)'
+                            ],
+                            borderWidth: 1,
+                        },
+                    ],
+                }}/>
                     </div>
                 </div>
-                
             </div>
             <div className="z-10 mt-4 mb-4 flex rounded-lg items-center justify-around bg-white shadow-lg w-full">
                 <LineApp/>
             </div>
         </div>
-        <div className=" mt-[-32%] flex w-full justify-end">
+        <div className=" mt-[-30%] xl:mt-[-28%] flex w-full justify-end">
             <img src="/images/assets/revit/bottom.png"/>
         </div>
     </div>
