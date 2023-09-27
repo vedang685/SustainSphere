@@ -57,7 +57,7 @@ function page() {
                     </div>
                 </div>
                 <div className="h-full flex flex-col items-center justify-center">
-                    <div className='text-xl text-black mb-0'>E</div>
+                    <div className='text-xl text-black mb-0'>S</div>
                     <div className='h-[20vh]'>
                         <DonApp label={"55%"} data={{  
                     datasets: [
@@ -80,7 +80,7 @@ function page() {
                     </div>
                 </div>
                 <div className="h-full flex flex-col items-center justify-center">
-                    <div className='text-xl text-black mb-0'>E</div>
+                    <div className='text-xl text-black mb-0'>G</div>
                     <div className='h-[20vh]'>
                         <DonApp label={"40%"} data={{  
                     datasets: [
