@@ -44,12 +44,12 @@ const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
   labels,
   datasets: [
     {
-      label: 'Dataset 1',
+      label: 'Withdrawal',
       data: labels.map(() => faker.number.int({ min: 0, max: 1000 })),
       backgroundColor: 'rgba(255, 99, 132, 0.5)',
     },
     {
-      label: 'Dataset 2',
+      label: 'Resolved',
       data: labels.map(() => faker.number.int({ min: 0, max: 1000 })),
       backgroundColor: 'rgba(53, 162, 235, 0.5)',
     },
