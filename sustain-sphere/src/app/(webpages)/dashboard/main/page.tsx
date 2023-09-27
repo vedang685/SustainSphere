@@ -2,8 +2,10 @@
 import React from 'react'
 import { DonApp } from '../components/environment/PieChart'
 import { LineApp } from '../components/LineChart'
+import {faker} from "@faker-js/faker";
 
 function page() {
+    const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
   return (
     <div className="relative w-full">
         <div className='main ml-[8%] mr-[8%] px-5 text-white relative'>
@@ -102,7 +104,31 @@ function page() {
                 </div>
             </div>
             <div className="z-10 mt-4 mb-4 flex rounded-lg items-center justify-around bg-white shadow-lg w-full">
-                <LineApp/>
+
+                <LineApp data={{
+
+                    labels,
+                    datasets: [
+                        {
+                            label: 'Environment',
+                            data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+                            borderColor: 'rgb(255, 99, 132)',
+                            backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                        },
+                        {
+                            label: 'Social',
+                            data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+                            borderColor: 'rgb(53, 162, 235)',
+                            backgroundColor: 'rgba(53, 162, 235, 0.5)',
+                        },
+                        {
+                            label: 'Governance',
+                            data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+                            borderColor: 'rgb(53, 162, 235)',
+                            backgroundColor: 'rgba(53, 162, 235, 0.5)',
+                        },
+                    ],
+                }}/>
             </div>
         </div>
         <div className=" mt-[-30%] xl:mt-[-28%] flex w-full justify-end">
