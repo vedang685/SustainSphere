@@ -28,7 +28,7 @@ function page() {
                     <p className='w-[80%] text-black text-xs'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                 </div>
                 <div className="absolute bottom-2 right-[10%] w-[20%]">
-                    <p className='text-[#009765] text-xl'>GOVERNMENT</p>
+                    <p className='text-[#009765] text-xl'>GOVERNANCE</p>
                     <p className='w-[80%] text-black text-xs'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                 </div>
             </div>
@@ -124,8 +124,8 @@ function page() {
                         {
                             label: 'Governance',
                             data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-                            borderColor: 'rgb(53, 162, 235)',
-                            backgroundColor: 'rgba(53, 162, 235, 0.5)',
+                            borderColor: 'rgb(211,168,36)',
+                            backgroundColor: 'rgb(238,238,173)',
                         },
                     ],
                 }}/>
