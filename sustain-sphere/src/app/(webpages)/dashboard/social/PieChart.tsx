@@ -20,7 +20,7 @@ const options = {
   };
 
  const data = {
-  labels: ['Red', 'Blue', 'Yellow'],
+  labels: ['2020', '2021', '2022'],
   datasets: [
     {
       label: '# of Votes',
