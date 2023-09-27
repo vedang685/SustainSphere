@@ -96,7 +96,7 @@ export default function Navbar() {
                                    ="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] md:[--trigger:hover] md:py-4">
                                <button type="button"
                                        className="flex items-center w-full text-text-white hover:text-gray-300 font-medium ">
-                                   Dropdown
+                                   Dashboard
                                    <svg className="ml-2 w-2.5 h-2.5 text-text-white" width="16" height="16"
                                         viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                        <path
@@ -111,10 +111,10 @@ export default function Navbar() {
                                    opacity-0 md:w-48 hidden z-10 md:shadow-md rounded-lg p-2
                                     bg-gray-800 border-gray-700 divide-gray-700
                                     before:absolute top-full md:border before:-top-5 before:left-0 before:w-full before:h-5">
-                                   <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm focus:ring-2 focus:ring-blue-500 text-text-white hover:bg-gray-700 hover:text-gray-300"
-                                      href="#">
-                                       About
-                                   </a>
+                                   {/*<a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm focus:ring-2 focus:ring-blue-500 text-text-white hover:bg-gray-700 hover:text-gray-300"*/}
+                                   {/*   href="#">*/}
+                                   {/*    About*/}
+                                   {/*</a>*/}
                                    <div
                                        className="hs-dropdown relative [--strategy:static]
                                        md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover]">
@@ -123,7 +123,7 @@ export default function Navbar() {
                                                items-center text-sm rounded-md py-2
                                                px-3 focus:ring-2 focus:ring-blue-500
                                                text-text-white hover:bg-gray-700 hover:text-gray-300">
-                                           Sub Menu
+                                           Menu
                                            <svg className="md:-rotate-90 ml-2 w-2.5 h-2.5 text-gray-600" width="16"
                                                 height="16" viewBox="0 0 16 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -139,33 +139,36 @@ export default function Navbar() {
                                            md:mt-2 md:shadow-md rounded-lg p-2 bg-gray-800 md:dark:border
                                            border-gray-700 divide-gray-700 before:absolute md:border
                                            before:-right-5 before:top-0 before:h-full before:w-5 top-0 right-full !mx-[10px]">
-                                           <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white
+                                           <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white
                                            focus:ring-2 focus:ring-blue-500 hover:bg-gray-700
-                                            hover:text-gray-300"
-                                              href="#">
-                                               About
-                                           </a>
-                                           <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm focus:ring-2
-                                           focus:ring-blue-500 text-text-white hover:bg-gray-700
-                                            hover:text-gray-300"
-                                              href="#">
-                                               Downloads
-                                           </a>
+                                            hover:text-gray-300" href='/dashboard/main'>Main</Link>
+                                           <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white
+                                           focus:ring-2 focus:ring-blue-500 hover:bg-gray-700
+                                            hover:text-gray-300" href='/dashboard/'>Environment</Link>
+                                           <Link className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-white
+                                           focus:ring-2 focus:ring-blue-500 hover:bg-gray-700
+                                            hover:text-gray-300" href='/dashboard/social'>Social</Link>
+                                           {/*<a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm focus:ring-2*/}
+                                           {/*focus:ring-blue-500 text-text-white hover:bg-gray-700*/}
+                                           {/* hover:text-gray-300"*/}
+                                           {/*   href="#">*/}
+                                           {/*    Downloads*/}
+                                           {/*</a>*/}
                                        </div>
                                    </div>
 
-                                   <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm focus:ring-2
-                                           focus:ring-blue-500 text-text-white hover:bg-gray-700
-                                            hover:text-gray-300"
-                                      href="#">
-                                       Downloads
-                                   </a>
-                                   <a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm focus:ring-2
-                                           focus:ring-blue-500 text-text-white hover:bg-gray-700
-                                            hover:text-gray-300"
-                                      href="#">
-                                       Team Account
-                                   </a>
+                                   {/*<a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm focus:ring-2*/}
+                                   {/*        focus:ring-blue-500 text-text-white hover:bg-gray-700*/}
+                                   {/*         hover:text-gray-300"*/}
+                                   {/*   href="#">*/}
+                                   {/*    Downloads*/}
+                                   {/*</a>*/}
+                                   {/*<a className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm focus:ring-2*/}
+                                   {/*        focus:ring-blue-500 text-text-white hover:bg-gray-700*/}
+                                   {/*         hover:text-gray-300"*/}
+                                   {/*   href="#">*/}
+                                   {/*    Team Account*/}
+                                   {/*</a>*/}
                                </div>
                            </div>
 
